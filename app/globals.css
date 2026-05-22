@@ -31,6 +31,48 @@ body {
   background-attachment: fixed;
 }
 
+/* Mobile performance: kill the most expensive paint operations on phones.
+   Tradeoff: aesthetic fidelity drops slightly on mobile in exchange for
+   a much smoother scroll & animation experience. Desktop is untouched. */
+@media (max-width: 768px) {
+  body {
+    /* `background-attachment: fixed` forces a full-viewport repaint on every
+       scroll frame on mobile — biggest single FPS killer */
+    background-attachment: scroll;
+  }
+  .glass {
+    backdrop-filter: blur(8px);
+    -webkit-backdrop-filter: blur(8px);
+  }
+  .glass-strong {
+    backdrop-filter: blur(10px);
+    -webkit-backdrop-filter: blur(10px);
+  }
+  .noise::after {
+    /* the noise overlay is multi-layered with mix-blend-mode: overlay —
+       very expensive when combined with scroll repainting */
+    display: none;
+  }
+  /* Cap blur radius on decorative halos. blur-3xl == 64px which is the
+     #1 GPU cost on phones — 24px reads visually identical at this scale. */
+  .blur-3xl {
+    --tw-blur: blur(24px) !important;
+    filter: var(--tw-blur) !important;
+  }
+}
+
+@media (max-width: 480px) {
+  /* On the smallest phones we also drop backdrop-filter entirely and
+     fall back to a tinted background — readability stays the same and
+     scroll becomes butter-smooth. */
+  .glass,
+  .glass-strong {
+    backdrop-filter: none;
+    -webkit-backdrop-filter: none;
+    background: rgba(15, 7, 24, 0.78);
+  }
+}
+
 ::selection {
   background: rgba(168, 85, 247, 0.35);
   color: #fff;
