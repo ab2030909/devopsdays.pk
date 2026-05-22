@@ -231,8 +231,9 @@ export default function Venue() {
             {/* drifting clouds above the skyline */}
             {!reduce && <Clouds />}
 
-            {/* fireworks above the buildings */}
-            {heavyMotion && (
+            {/* fireworks above the buildings — always on, just paused
+                automatically by IntersectionObserver when off-screen */}
+            {!reduce && (
               <Fireworks className="absolute inset-x-0 top-0 h-[70%] w-full z-[5]" />
             )}
 
