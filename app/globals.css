@@ -242,5 +242,7 @@ body {
   /* Each top-level section starts fresh on a new page */
   article > div > section { break-inside: avoid; }
   .break-inside-avoid { break-inside: avoid; }
-  @page { size: A4; margin: 16mm 14mm; }
+  /* Cover and closing slides each get their own page */
+  .deck-page { break-after: page; page-break-after: always; }
+  @page { size: A4; margin: 14mm 12mm; }
 }
