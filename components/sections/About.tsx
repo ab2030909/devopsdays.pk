@@ -27,7 +27,7 @@ export default function About() {
     <section id="about" className="relative py-20 sm:py-24 lg:py-32">
       <div className="container-px">
         <div className="mx-auto max-w-7xl grid lg:grid-cols-12 gap-10 lg:gap-12 items-center">
-          <div className="lg:col-span-7">
+          <div className="lg:col-span-7 min-w-0">
             <motion.div
               initial={{ opacity: 0, y: 20 }}
               whileInView={{ opacity: 1, y: 0 }}
@@ -101,7 +101,7 @@ export default function About() {
             whileInView={{ opacity: 1, scale: 1 }}
             viewport={{ once: true }}
             transition={{ duration: 0.8 }}
-            className="lg:col-span-5"
+            className="lg:col-span-5 min-w-0 w-full"
           >
             <InfraVisual />
           </motion.div>

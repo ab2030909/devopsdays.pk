@@ -48,7 +48,7 @@ export default function Hero() {
       <div className="container-px">
         <div className="mx-auto max-w-7xl grid lg:grid-cols-12 gap-8 lg:gap-8 items-center">
           {/* text */}
-          <div className="lg:col-span-7 relative">
+          <div className="lg:col-span-7 relative min-w-0">
             <motion.div
               initial={{ opacity: 0, y: 20 }}
               animate={{ opacity: 1, y: 0 }}
@@ -118,7 +118,7 @@ export default function Hero() {
           </div>
 
           {/* map / visual */}
-          <div className="lg:col-span-5 relative flex items-center justify-center mt-4 lg:mt-20 xl:mt-28 2xl:mt-32 order-first lg:order-none">
+          <div className="lg:col-span-5 min-w-0 relative flex items-center justify-center mt-4 lg:mt-20 xl:mt-28 2xl:mt-32 order-first lg:order-none">
             <motion.div
               initial={{ opacity: 0, scale: 0.95 }}
               animate={{ opacity: 1, scale: 1 }}

@@ -57,7 +57,7 @@ export default function Venue() {
       </div>
 
       <div className="container-px">
-        <div className="mx-auto max-w-7xl grid lg:grid-cols-2 gap-12 items-center">
+        <div className="mx-auto max-w-7xl grid lg:grid-cols-2 gap-12 items-center min-w-0">
           {/* left â€” copy */}
           <div>
             <motion.div
