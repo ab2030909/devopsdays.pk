@@ -41,111 +41,76 @@ const tiers = [
   {
     name: "Platinum",
     accent: "from-neon-glow via-neon to-neon-violet",
-    pkr: "PKR 1,500,000",
-    usd: "≈ USD 5,400",
+    usd: "USD 2,500",
+    pkr: "≈ PKR 700,000",
     slots: "1 slot",
     perks: [
       "Title sponsor — name in the conference billing",
       "20-min keynote on the main stage",
-      "Premium booth in the highest-traffic zone",
       "Logo on every digital and print asset",
       "Logo on conference t-shirts (front)",
       "4 dedicated social posts + 2 reels",
       "Newsletter feature (pre & post event)",
       "Lead capture: full attendee opt-in list",
       "Custom activation (workshop / hackathon / lounge)",
+      "Recruitment & talent-introduction privileges",
       "8 attendee passes",
     ],
   },
   {
     name: "Gold",
     accent: "from-yellow-200 via-amber-300 to-amber-500",
-    pkr: "PKR 800,000",
-    usd: "≈ USD 2,900",
-    slots: "3 slots",
+    usd: "USD 2,000",
+    pkr: "≈ PKR 560,000",
+    slots: "2 slots",
     perks: [
       "10-min talk on a track stage",
-      "Standard booth in the main expo",
       "Logo on stage backdrop & website",
       "Logo on conference t-shirts (sleeve)",
       "2 dedicated social posts",
       "Newsletter mention",
-      "Lead capture from booth scans",
+      "Lead capture from opt-in scans",
+      "Recruitment & talent-introduction privileges",
       "5 attendee passes",
     ],
   },
   {
     name: "Silver",
     accent: "from-zinc-200 via-zinc-300 to-zinc-500",
-    pkr: "PKR 400,000",
-    usd: "≈ USD 1,450",
-    slots: "5 slots",
+    usd: "USD 1,000",
+    pkr: "≈ PKR 280,000",
+    slots: "4 slots",
     perks: [
-      "Booth in the silver zone",
       "Logo on website + sponsors slide",
       "1 dedicated social post",
-      "Recruitment booth privileges",
+      "Mention in opening keynote",
+      "Recruitment & talent-introduction privileges",
       "3 attendee passes",
     ],
   },
   {
-    name: "Community Sponsor",
-    accent: "from-neon/60 via-neon/40 to-neon/20",
-    pkr: "PKR 100,000",
-    usd: "≈ USD 360",
+    name: "Bronze",
+    accent: "from-amber-500 via-orange-600 to-rose-700",
+    usd: "USD 500",
+    pkr: "≈ PKR 140,000",
     perks: [
-      "Logo on community sponsors page",
-      "Mention in opening keynote",
+      "Logo on website",
+      "Mention in the opening keynote",
       "Optional swag in attendee bag",
       "2 attendee passes",
     ],
   },
   {
-    name: "Startup Partner",
+    name: "Ecosystem",
     accent: "from-cyan-300 via-cyan-400 to-cyan-600",
-    pkr: "PKR 150,000",
-    usd: "≈ USD 540",
-    slots: "Early-stage only · < 5 yrs old",
+    usd: "USD 250",
+    pkr: "≈ PKR 70,000",
     perks: [
-      "Pitch slot in the startup showcase",
-      "Demo table in the startup zone",
-      "Logo on website",
-      "Pre-event newsletter spotlight",
-      "2 attendee passes",
+      "Logo on community sponsors page",
+      "Mention in the opening sponsor reel",
+      "1 attendee pass",
     ],
   },
-  {
-    name: "Venue / In-kind Partner",
-    accent: "from-fuchsia-300 via-fuchsia-400 to-fuchsia-600",
-    pkr: "Bespoke",
-    usd: "—",
-    perks: [
-      "For venue, AV, catering, hosting or cloud-credits providers",
-      "Deliverables negotiated per scope",
-      "Custom co-branding & on-site recognition",
-    ],
-  },
-];
-
-const addons = [
-  ["Lounge / chillout zone branding", "PKR 200,000", "USD 720"],
-  ["Coffee / break station branding", "PKR 150,000", "USD 540"],
-  ["Lanyard branding (exclusive)", "PKR 250,000", "USD 900"],
-  ["Attendee bag insert", "PKR 75,000", "USD 270"],
-  ["Workshop slot (90 min)", "PKR 200,000", "USD 720"],
-  ["Hackathon co-host", "PKR 350,000", "USD 1,260"],
-  ["After-party co-host", "PKR 500,000", "USD 1,800"],
-  ["Live-stream sponsor (exclusive)", "PKR 300,000", "USD 1,080"],
-  ["Recruitment booth upgrade", "PKR 100,000", "USD 360"],
-];
-
-const timeline = [
-  ["Sponsor onboarding opens", "Now"],
-  ["Early-bird sponsor cut-off", "30 April 2026"],
-  ["Sponsor logo lock-in for print", "31 July 2026"],
-  ["Speaker line-up announcement", "August 2026"],
-  ["Conference day", "26 September 2026"],
-  ["Post-event sponsor report", "October 2026"],
 ];
 
 export default function DeckView() {
@@ -413,10 +378,10 @@ export default function DeckView() {
                       {t.name}
                     </h3>
                     <span className="text-sm sm:text-base font-mono text-ink/85">
-                      {t.pkr}
+                      {t.usd}
                     </span>
                     <span className="text-xs sm:text-sm text-ink/55">
-                      {t.usd}
+                      {t.pkr}
                     </span>
                     {t.slots && (
                       <span className="ml-auto text-[10px] font-mono uppercase tracking-[0.2em] text-neon-glow/85">
@@ -438,48 +403,9 @@ export default function DeckView() {
           </Section>
 
           {/* ==================================================== */}
-          {/* ADD-ONS                                                */}
-          {/* ==================================================== */}
-          <Section title="Add-ons & Activations" eyebrow="07 · Stack on top">
-            <p className="text-sm text-ink/65 mb-3">
-              Stack any of these on top of a base tier.
-            </p>
-            <div className="overflow-hidden rounded-xl border border-neon/15">
-              <table className="w-full text-sm">
-                <thead className="bg-neon/[0.05]">
-                  <tr className="text-left">
-                    <th className="py-2 px-3 font-mono uppercase tracking-[0.18em] text-[11px] text-neon-glow/85">
-                      Add-on
-                    </th>
-                    <th className="py-2 px-3 font-mono uppercase tracking-[0.18em] text-[11px] text-neon-glow/85">
-                      PKR
-                    </th>
-                    <th className="py-2 px-3 font-mono uppercase tracking-[0.18em] text-[11px] text-neon-glow/85">
-                      USD
-                    </th>
-                  </tr>
-                </thead>
-                <tbody className="divide-y divide-neon/10">
-                  {addons.map(([n, p, u]) => (
-                    <tr key={n}>
-                      <td className="py-2 px-3 text-ink/80">{n}</td>
-                      <td className="py-2 px-3 font-mono tabular-nums text-ink/85">
-                        {p}
-                      </td>
-                      <td className="py-2 px-3 font-mono tabular-nums text-neon-glow">
-                        {u}
-                      </td>
-                    </tr>
-                  ))}
-                </tbody>
-              </table>
-            </div>
-          </Section>
-
-          {/* ==================================================== */}
           {/* REACH                                                  */}
           {/* ==================================================== */}
-          <Section title="Marketing & Reach" eyebrow="08 · Amplification">
+          <Section title="Marketing & Reach" eyebrow="07 · Amplification">
             <p>Sponsors are amplified across:</p>
             <ul className="grid sm:grid-cols-2 gap-2 mt-3 text-sm">
               {[
@@ -507,29 +433,9 @@ export default function DeckView() {
           </Section>
 
           {/* ==================================================== */}
-          {/* TIMELINE                                               */}
-          {/* ==================================================== */}
-          <Section title="Timeline" eyebrow="09 · Roadmap">
-            <div className="overflow-hidden rounded-xl border border-neon/15">
-              <table className="w-full text-sm">
-                <tbody className="divide-y divide-neon/10">
-                  {timeline.map(([m, d]) => (
-                    <tr key={m}>
-                      <td className="py-2.5 px-3 text-ink/80">{m}</td>
-                      <td className="py-2.5 px-3 font-mono tabular-nums text-neon-glow text-right">
-                        {d}
-                      </td>
-                    </tr>
-                  ))}
-                </tbody>
-              </table>
-            </div>
-          </Section>
-
-          {/* ==================================================== */}
           {/* HOW TO                                                 */}
           {/* ==================================================== */}
-          <Section title="How to Become a Sponsor" eyebrow="10 · Next steps">
+          <Section title="How to Become a Sponsor" eyebrow="08 · Next steps">
             <ol className="space-y-3">
               {[
                 "Reply to this deck indicating your tier of interest.",
