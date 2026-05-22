@@ -7,7 +7,7 @@ const stats = [
   { value: 300, suffix: "+", label: "Expected Attendees" },
   { value: 10, suffix: "+", label: "Speakers" },
   { value: 30, suffix: "+", label: "Communities" },
-  { value: 10, suffix: "+", label: "Sponsors" },
+  { value: 6, suffix: "+", label: "Tracks" },
   { value: 1, suffix: "", label: "National DevOps Movement" },
 ];
 
