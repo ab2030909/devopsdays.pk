@@ -218,3 +218,29 @@ body {
     transition-duration: 0.001ms !important;
   }
 }
+
+/* Print styles for /deck — saving from Chrome creates a clean PDF.
+   Backgrounds preserved (purple theme is the brand) but heavy effects
+   are simplified for crisp print output. */
+@media print {
+  html, body {
+    background: #050505 !important;
+    color: #F5F5F5 !important;
+    -webkit-print-color-adjust: exact !important;
+    print-color-adjust: exact !important;
+  }
+  body { background-image: none !important; }
+  .noise::after { display: none !important; }
+  .glass, .glass-strong {
+    backdrop-filter: none !important;
+    -webkit-backdrop-filter: none !important;
+    background: rgba(15, 7, 24, 0.85) !important;
+    border-color: rgba(168,85,247,0.35) !important;
+  }
+  .blur-3xl, [class*="blur-"] { filter: none !important; }
+  .shadow-neon, .shadow-neon-lg { box-shadow: none !important; }
+  /* Each top-level section starts fresh on a new page */
+  article > div > section { break-inside: avoid; }
+  .break-inside-avoid { break-inside: avoid; }
+  @page { size: A4; margin: 16mm 14mm; }
+}
