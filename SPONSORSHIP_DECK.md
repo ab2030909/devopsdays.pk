@@ -214,6 +214,8 @@ Sponsors are amplified across:
 
 **hello@devopsdays.pk**
 
+**+92 315 1537220**
+
 Website · [devopsdays.pk](https://devopsdays.pk)
 
 Instagram · LinkedIn · X *(handles to be filled in)*

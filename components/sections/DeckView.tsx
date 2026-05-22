@@ -485,12 +485,20 @@ export default function DeckView() {
                 Reach out and we&apos;ll send the full partnership agreement
                 within 48 hours.
               </p>
-              <a
-                href="mailto:hello@devopsdays.pk"
-                className="mt-8 inline-flex btn-primary text-sm"
-              >
-                hello@devopsdays.pk
-              </a>
+              <div className="mt-8 flex flex-wrap items-center justify-center gap-3">
+                <a
+                  href="mailto:hello@devopsdays.pk"
+                  className="btn-primary text-sm"
+                >
+                  hello@devopsdays.pk
+                </a>
+                <a
+                  href="tel:+923151537220"
+                  className="btn-secondary text-sm"
+                >
+                  +92 315 1537220
+                </a>
+              </div>
               <div className="mt-12 grid grid-cols-2 sm:grid-cols-4 gap-3 max-w-2xl mx-auto">
                 {heroStats.map((s) => (
                   <div key={s.l} className="glass rounded-xl p-4">
