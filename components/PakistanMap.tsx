@@ -31,7 +31,7 @@ export default function PakistanMap({
           className="relative w-full h-full"
         >
           <Image
-            src="/hero-logo-transparent.png"
+            src="/hero-logo.webp"
             alt="DevOps Days Pakistan 2026"
             fill
             priority

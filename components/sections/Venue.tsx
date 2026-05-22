@@ -1,7 +1,7 @@
 ﻿"use client";
 
 import Image from "next/image";
-import { useRef } from "react";
+import { useEffect, useRef, useState } from "react";
 import {
   motion,
   useReducedMotion,
@@ -14,6 +14,17 @@ import Fireworks from "../Fireworks";
 
 export default function Venue() {
   const reduce = useReducedMotion();
+  const [isMobile, setIsMobile] = useState(false);
+
+  useEffect(() => {
+    const mq = window.matchMedia("(max-width: 640px)");
+    const update = () => setIsMobile(mq.matches);
+    update();
+    mq.addEventListener("change", update);
+    return () => mq.removeEventListener("change", update);
+  }, []);
+
+  const heavyMotion = !reduce && !isMobile;
 
   // mouse-driven parallax tilt
   const ref = useRef<HTMLDivElement>(null);
@@ -27,7 +38,7 @@ export default function Venue() {
   const ty = useTransform(sy, [-0.5, 0.5], [-6, 6]);
 
   const onMove = (e: React.MouseEvent<HTMLDivElement>) => {
-    if (reduce) return;
+    if (!heavyMotion) return;
     const r = ref.current?.getBoundingClientRect();
     if (!r) return;
     mx.set((e.clientX - r.left) / r.width - 0.5);
@@ -149,7 +160,7 @@ export default function Venue() {
               >
                 {/* the skyline image */}
                 <Image
-                  src="/skyline-transparent.png"
+                  src="/skyline.webp"
                   alt="Islamabad skyline â€” Faisal Mosque, Pindi Stadium, Pakistan Monument"
                   fill
                   priority
@@ -183,7 +194,7 @@ export default function Venue() {
                 </motion.div>
 
                 {/* twinkling stars / particles drifting up */}
-                {!reduce && <Twinkles />}
+                {heavyMotion && <Twinkles />}
 
                 {/* stadium floodlight flares â€” three blooms over the central building */}
                 {!reduce && (
@@ -221,7 +232,7 @@ export default function Venue() {
             {!reduce && <Clouds />}
 
             {/* fireworks above the buildings */}
-            {!reduce && (
+            {heavyMotion && (
               <Fireworks className="absolute inset-x-0 top-0 h-[70%] w-full z-[5]" />
             )}
 

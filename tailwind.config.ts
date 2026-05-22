@@ -7,6 +7,9 @@ const config: Config = {
   ],
   theme: {
     extend: {
+      screens: {
+        xs: "440px",
+      },
       colors: {
         background: "#050505",
         surface: "#0A0A0A",

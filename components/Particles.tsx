@@ -10,6 +10,11 @@ interface ParticlesProps {
 /**
  * Lightweight canvas particle field – mimics floating data points
  * with subtle linkage between near neighbours.
+ *
+ * Performance:
+ *  - Uses an IntersectionObserver to pause the RAF loop when the canvas
+ *    is fully off-screen.
+ *  - Skips the N² link pass when count is small (mobile defaults).
  */
 export default function Particles({ count = 60, className = "" }: ParticlesProps) {
   const ref = useRef<HTMLCanvasElement>(null);
@@ -21,8 +26,9 @@ export default function Particles({ count = 60, className = "" }: ParticlesProps
     if (!ctx) return;
 
     let raf = 0;
-    let w = 0,
-      h = 0;
+    let visible = true;
+    let w = 0;
+    let h = 0;
     const dpr = Math.min(window.devicePixelRatio || 1, 2);
 
     type P = { x: number; y: number; vx: number; vy: number; r: number };
@@ -44,25 +50,34 @@ export default function Particles({ count = 60, className = "" }: ParticlesProps
       }));
     };
 
+    const drawLinks = particles.length <= 35 ? false : true; // skip N² on mobile
+
     const tick = () => {
+      if (!visible) {
+        raf = requestAnimationFrame(tick);
+        return;
+      }
+
       ctx.clearRect(0, 0, w, h);
 
-      // links
-      for (let i = 0; i < particles.length; i++) {
-        for (let j = i + 1; j < particles.length; j++) {
-          const a = particles[i],
-            b = particles[j];
-          const dx = a.x - b.x,
-            dy = a.y - b.y;
-          const d2 = dx * dx + dy * dy;
-          if (d2 < 120 * 120) {
-            const o = 1 - Math.sqrt(d2) / 120;
-            ctx.strokeStyle = `rgba(168,85,247,${0.18 * o})`;
-            ctx.lineWidth = 0.6;
-            ctx.beginPath();
-            ctx.moveTo(a.x, a.y);
-            ctx.lineTo(b.x, b.y);
-            ctx.stroke();
+      // links — only draw when count is high enough to look meaningful
+      if (drawLinks) {
+        for (let i = 0; i < particles.length; i++) {
+          for (let j = i + 1; j < particles.length; j++) {
+            const a = particles[i];
+            const b = particles[j];
+            const dx = a.x - b.x;
+            const dy = a.y - b.y;
+            const d2 = dx * dx + dy * dy;
+            if (d2 < 120 * 120) {
+              const o = 1 - Math.sqrt(d2) / 120;
+              ctx.strokeStyle = `rgba(168,85,247,${0.18 * o})`;
+              ctx.lineWidth = 0.6;
+              ctx.beginPath();
+              ctx.moveTo(a.x, a.y);
+              ctx.lineTo(b.x, b.y);
+              ctx.stroke();
+            }
           }
         }
       }
@@ -94,9 +109,20 @@ export default function Particles({ count = 60, className = "" }: ParticlesProps
     resize();
     tick();
     window.addEventListener("resize", resize);
+
+    // pause when off-screen
+    const io = new IntersectionObserver(
+      (entries) => {
+        for (const e of entries) visible = e.isIntersecting;
+      },
+      { rootMargin: "50px" }
+    );
+    io.observe(canvas);
+
     return () => {
       cancelAnimationFrame(raf);
       window.removeEventListener("resize", resize);
+      io.disconnect();
     };
   }, [count]);
 

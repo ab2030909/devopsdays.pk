@@ -60,6 +60,7 @@ export default function Fireworks({
     if (!ctx) return;
 
     let raf = 0;
+    let visible = true;
     let w = 0;
     let h = 0;
     const dpr = Math.min(window.devicePixelRatio || 1, 2);
@@ -119,6 +120,10 @@ export default function Fireworks({
     };
 
     const tick = (now: number) => {
+      if (!visible) {
+        raf = requestAnimationFrame(tick);
+        return;
+      }
       // Subtle trailing fade — gives streaks
       ctx.globalCompositeOperation = "destination-out";
       ctx.fillStyle = "rgba(0,0,0,0.18)";
@@ -193,9 +198,19 @@ export default function Fireworks({
     resize();
     raf = requestAnimationFrame(tick);
     window.addEventListener("resize", resize);
+
+    const io = new IntersectionObserver(
+      (entries) => {
+        for (const e of entries) visible = e.isIntersecting;
+      },
+      { rootMargin: "50px" }
+    );
+    io.observe(canvas);
+
     return () => {
       cancelAnimationFrame(raf);
       window.removeEventListener("resize", resize);
+      io.disconnect();
     };
   }, [state, density]);
 
