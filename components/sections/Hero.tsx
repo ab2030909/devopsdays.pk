@@ -131,7 +131,7 @@ export default function Hero() {
         </div>
 
         {/* marquee strip */}
-        <div className="relative mt-10 sm:mt-14 lg:mt-10 mask-fade-x">
+        <div className="relative mt-10 sm:mt-14 lg:mt-10 mask-fade-x overflow-hidden">
           <div className="flex w-max animate-marquee gap-12 text-xs font-mono uppercase tracking-[0.3em] text-ink/40">
             {Array.from({ length: 2 }).map((_, k) => (
               <div key={k} className="flex gap-12">
