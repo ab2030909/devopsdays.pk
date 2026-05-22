@@ -115,6 +115,9 @@ The event will feature:
 
 - Title sponsor: "DevOps Days Pakistan 2026, presented by [Brand]"
 - 20-minute keynote slot on the main stage
+- Logo on the main media wall (premium placement)
+- Dedicated standee at the venue
+- Pre-event and post-event social media posts (dedicated)
 - Co-branded backdrop on stage
 - Logo on every digital and print asset
 - Logo on conference t-shirts (front)
@@ -127,6 +130,9 @@ The event will feature:
 
 ### 🟡 Gold — `USD 2,000` / `≈ PKR 560,000` *(2 slots)*
 - 10-minute talk slot on a track stage
+- Logo on the main media wall
+- Dedicated standee at the venue
+- Pre-event and post-event social media posts (dedicated)
 - Logo on stage backdrop & website
 - Logo on conference t-shirts (sleeve)
 - 2 dedicated social posts
@@ -136,6 +142,9 @@ The event will feature:
 - 5 attendee passes
 
 ### ⚪ Silver — `USD 1,000` / `≈ PKR 280,000` *(4 slots)*
+- Logo on the main media wall
+- Dedicated standee at the venue
+- Pre-event and post-event social media posts (dedicated)
 - Logo on website + on the official "sponsors" slide
 - 1 dedicated social post
 - Mention in opening keynote
@@ -143,12 +152,18 @@ The event will feature:
 - 3 attendee passes
 
 ### 🟫 Bronze — `USD 500` / `≈ PKR 140,000`
+- Logo on the main media wall
+- Dedicated standee at the venue
+- Pre-event and post-event social media posts (dedicated)
 - Logo on website
 - Mention in the opening keynote
 - Optional swag in attendee bag
 - 2 attendee passes
 
 ### 💧 Ecosystem — `USD 250` / `≈ PKR 70,000`
+- Logo on the main media wall
+- Dedicated standee at the venue
+- Pre-event and post-event social media posts (dedicated)
 - Logo on community sponsors page
 - Mention in the opening sponsor reel
 - 1 attendee pass

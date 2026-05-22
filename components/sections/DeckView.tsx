@@ -47,6 +47,9 @@ const tiers = [
     perks: [
       "Title sponsor — name in the conference billing",
       "20-min keynote on the main stage",
+      "Logo on the main media wall (premium placement)",
+      "Dedicated standee at the venue",
+      "Pre-event + post-event social media posts (dedicated)",
       "Logo on every digital and print asset",
       "Logo on conference t-shirts (front)",
       "4 dedicated social posts + 2 reels",
@@ -65,6 +68,9 @@ const tiers = [
     slots: "2 slots",
     perks: [
       "10-min talk on a track stage",
+      "Logo on the main media wall",
+      "Dedicated standee at the venue",
+      "Pre-event + post-event social media posts (dedicated)",
       "Logo on stage backdrop & website",
       "Logo on conference t-shirts (sleeve)",
       "2 dedicated social posts",
@@ -81,6 +87,9 @@ const tiers = [
     pkr: "≈ PKR 280,000",
     slots: "4 slots",
     perks: [
+      "Logo on the main media wall",
+      "Dedicated standee at the venue",
+      "Pre-event + post-event social media posts (dedicated)",
       "Logo on website + sponsors slide",
       "1 dedicated social post",
       "Mention in opening keynote",
@@ -94,6 +103,9 @@ const tiers = [
     usd: "USD 500",
     pkr: "≈ PKR 140,000",
     perks: [
+      "Logo on the main media wall",
+      "Dedicated standee at the venue",
+      "Pre-event + post-event social media posts (dedicated)",
       "Logo on website",
       "Mention in the opening keynote",
       "Optional swag in attendee bag",
@@ -106,6 +118,9 @@ const tiers = [
     usd: "USD 250",
     pkr: "≈ PKR 70,000",
     perks: [
+      "Logo on the main media wall",
+      "Dedicated standee at the venue",
+      "Pre-event + post-event social media posts (dedicated)",
       "Logo on community sponsors page",
       "Mention in the opening sponsor reel",
       "1 attendee pass",
