@@ -35,7 +35,7 @@ const navGroups = [
   {
     title: "Resources",
     links: [
-      { label: "Sponsorship Deck", href: "#" },
+      { label: "Sponsorship Deck", href: "/deck" },
       { label: "Code of Conduct", href: "#" },
       { label: "Press Kit", href: "#" },
       { label: "Contact", href: "mailto:hello@devopsdays.pk" },

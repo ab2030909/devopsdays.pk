@@ -132,9 +132,9 @@ export default function Sponsors() {
             Become a Sponsor
             <ArrowRight className="h-4 w-4 transition-transform group-hover:translate-x-0.5" />
           </a>
-          <a href="#sponsorship-deck" className="btn-secondary">
+          <a href="/deck" className="btn-secondary">
             <Download className="h-4 w-4" />
-            Download Sponsorship Deck
+            View Sponsorship Deck
           </a>
         </div>
       </div>

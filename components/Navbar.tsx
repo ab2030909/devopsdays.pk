@@ -20,6 +20,7 @@ const links: NavLink[] = [
   { hash: "#tracks", label: "Tracks" },
   { route: "/sponsors", label: "Sponsors" },
   { route: "/partners", label: "Partners" },
+  { route: "/deck", label: "Deck" },
   { hash: "#venue", label: "Venue" },
   { hash: "#faq", label: "FAQ" },
 ];
@@ -103,9 +104,9 @@ export default function Navbar() {
           </nav>
 
           <div className="hidden md:flex items-center gap-3">
-            <a href="#sponsorship-deck" className="btn-secondary text-xs">
+            <Link href="/deck" className="btn-secondary text-xs">
               Sponsorship Deck
-            </a>
+            </Link>
             <Link href="/sponsors" className="btn-primary text-xs">
               Become a Sponsor
             </Link>
@@ -148,9 +149,9 @@ export default function Navbar() {
                   );
                 })}
                 <div className="mt-2 grid grid-cols-2 gap-2">
-                  <a href="#sponsorship-deck" className="btn-secondary text-xs">
+                  <Link href="/deck" className="btn-secondary text-xs">
                     Deck
-                  </a>
+                  </Link>
                   <Link href="/sponsors" className="btn-primary text-xs">
                     Sponsor
                   </Link>
