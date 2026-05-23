@@ -37,6 +37,7 @@ export const COMMUNITY_PARTNERS: CommunityPartner[] = [
   { name: "MLSA UET Peshawar", logo: "/community/MLSA UET Peshawar.webp" },
   { name: "SENSE — IIUI", logo: "/community/SENSE-IIUI.webp" },
   { name: "SSCIT", logo: "/community/SSCIT.webp" },
+  { name: "YOTA", logo: "/community/YOTA.webp" },
 ];
 
 const initialsOf = (name: string) =>
