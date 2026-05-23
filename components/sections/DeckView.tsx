@@ -8,8 +8,6 @@ import {
   ArrowLeft,
   Calendar,
   MapPin,
-  Cloud,
-  ShieldCheck,
 } from "lucide-react";
 
 const heroStats = [
@@ -220,21 +218,23 @@ export default function DeckView() {
               ))}
             </div>
 
-            {/* organizer crest strip */}
-            <div className="relative mt-10 inline-flex items-center gap-4 sm:gap-6 glass rounded-full px-5 py-2.5">
-              <span className="text-[10px] font-mono uppercase tracking-[0.28em] text-neon-glow/85">
+            {/* organizer crest strip — real logos */}
+            <div className="relative mt-12">
+              <div className="font-mono text-[10px] uppercase tracking-[0.32em] text-neon-glow/85 mb-4">
                 Organized By
-              </span>
-              <span className="h-5 w-px bg-neon/30" />
-              <span className="inline-flex items-center gap-2 text-xs sm:text-sm">
-                <Cloud className="h-4 w-4 text-neon-glow" />
-                Cloud Native Islamabad
-              </span>
-              <span className="hidden sm:inline-block h-5 w-px bg-neon/30" />
-              <span className="inline-flex items-center gap-2 text-xs sm:text-sm">
-                <ShieldCheck className="h-4 w-4 text-neon-glow" />
-                Cloud Native Security Pakistan
-              </span>
+              </div>
+              <div className="flex flex-wrap items-center justify-center gap-6 sm:gap-10">
+                <OrganizerLogo
+                  src="/cni-cropped.png"
+                  alt="Cloud Native Islamabad"
+                  boost
+                />
+                <span className="hidden sm:block h-12 w-px bg-neon/25" />
+                <OrganizerLogo
+                  src="/cnsp.png"
+                  alt="Cloud Native Security Pakistan"
+                />
+              </div>
             </div>
           </section>
 
@@ -516,6 +516,25 @@ export default function DeckView() {
               <div className="mt-3 text-[10px] font-mono uppercase tracking-[0.2em] text-neon-glow/60">
                 devopsdays.pk · DDP-26
               </div>
+
+              {/* organizers footer strip */}
+              <div className="mt-10">
+                <div className="font-mono text-[10px] uppercase tracking-[0.32em] text-neon-glow/85 mb-4">
+                  Organized By
+                </div>
+                <div className="flex flex-wrap items-center justify-center gap-6 sm:gap-10">
+                  <OrganizerLogo
+                    src="/cni-cropped.png"
+                    alt="Cloud Native Islamabad"
+                    boost
+                  />
+                  <span className="hidden sm:block h-10 w-px bg-neon/25" />
+                  <OrganizerLogo
+                    src="/cnsp.png"
+                    alt="Cloud Native Security Pakistan"
+                  />
+                </div>
+              </div>
             </div>
           </section>
         </div>
@@ -577,6 +596,33 @@ function Stat({ large, label }: { large: string; label: string }) {
       <div className="mt-1 text-[10px] font-mono uppercase tracking-[0.22em] text-ink/55">
         {label}
       </div>
+    </div>
+  );
+}
+
+function OrganizerLogo({
+  src,
+  alt,
+  boost = false,
+}: {
+  src: string;
+  alt: string;
+  boost?: boolean;
+}) {
+  return (
+    <div className="relative h-20 sm:h-24 w-44 sm:w-56 flex items-center justify-center">
+      <Image
+        src={src}
+        alt={alt}
+        fill
+        sizes="(min-width: 640px) 224px, 176px"
+        className="object-contain"
+        style={{
+          filter: boost
+            ? "brightness(1.5) contrast(1.05) drop-shadow(0 0 14px rgba(192,132,252,0.45))"
+            : "drop-shadow(0 0 12px rgba(192,132,252,0.35))",
+        }}
+      />
     </div>
   );
 }
