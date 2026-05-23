@@ -178,7 +178,6 @@ Sponsors are amplified across:
 - **LinkedIn** — pre-event countdown campaign + day-of coverage
 - **X / Twitter** — daily reels and thread spotlights
 - **Instagram** — partner takeovers + reels
-- **YouTube** — talk recordings retain sponsor branding indefinitely
 - **Newsletter** — pre and post-event editions to opt-in attendees
 - **Community partner channels** — 30+ partner communities cross-post sponsor highlights
 

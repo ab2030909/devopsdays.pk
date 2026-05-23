@@ -428,7 +428,6 @@ export default function DeckView() {
                 "LinkedIn pre-event campaign + day-of coverage",
                 "X / Twitter daily reels & spotlights",
                 "Instagram partner takeovers + reels",
-                "YouTube — talk recordings retain sponsor branding",
                 "Newsletter — pre and post-event editions",
                 "Community partner channels (30+ groups cross-post)",
               ].map((line) => (
