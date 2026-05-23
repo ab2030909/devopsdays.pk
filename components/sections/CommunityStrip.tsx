@@ -13,13 +13,6 @@ export default function CommunityStrip() {
 
   return (
     <section className="relative py-14 sm:py-20 overflow-hidden">
-      <div aria-hidden className="absolute inset-x-0 top-0 divider-glow" />
-      <div aria-hidden className="absolute inset-x-0 bottom-0 divider-glow" />
-      <div
-        aria-hidden
-        className="absolute -top-20 left-1/2 -translate-x-1/2 h-60 w-[60%] bg-neon/10 blur-[120px] rounded-full"
-      />
-
       <div className="container-px">
         <div className="mx-auto max-w-7xl">
           {/* marquee */}
