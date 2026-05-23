@@ -6,6 +6,7 @@ import About from "@/components/sections/About";
 import Tracks from "@/components/sections/Tracks";
 import WhyAttend from "@/components/sections/WhyAttend";
 import Speakers from "@/components/sections/Speakers";
+import CommunityStrip from "@/components/sections/CommunityStrip";
 import Venue from "@/components/sections/Venue";
 import FAQ from "@/components/sections/FAQ";
 import Footer from "@/components/sections/Footer";
@@ -19,6 +20,7 @@ export default function Home() {
       <Stats />
       <About />
       <Tracks />
+      <CommunityStrip />
       <Venue />
       <WhyAttend />
       <Speakers />
