@@ -20,6 +20,7 @@ export interface CommunityPartner {
 }
 
 export const COMMUNITY_PARTNERS: CommunityPartner[] = [
+  { name: "The Computer Science Society", logo: "/community/The Computer Science Society Logo.webp" },
   { name: "Artificial Intelligence Society", logo: "/community/Artificial Intelligence Society.webp" },
   { name: "AWS Cloud Clubs PIEAS", logo: "/community/AWS Cloud Clubs PIEAS.webp" },
   { name: "AWS Cloud Clubs QAU", logo: "/community/AWS Cloud Clubs QAU.webp" },
@@ -36,7 +37,6 @@ export const COMMUNITY_PARTNERS: CommunityPartner[] = [
   { name: "MLSA UET Peshawar", logo: "/community/MLSA UET Peshawar.webp" },
   { name: "SENSE — IIUI", logo: "/community/SENSE-IIUI.webp" },
   { name: "SSCIT", logo: "/community/SSCIT.webp" },
-  { name: "The Computer Science Society", logo: "/community/The Computer Science Society Logo.webp" },
 ];
 
 const initialsOf = (name: string) =>
