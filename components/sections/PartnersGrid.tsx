@@ -20,18 +20,23 @@ export interface CommunityPartner {
 }
 
 export const COMMUNITY_PARTNERS: CommunityPartner[] = [
-  { name: "Partner One", tagline: "Cloud community" },
-  { name: "Partner Two", tagline: "Developer group" },
-  { name: "Partner Three", tagline: "AI builders chapter" },
-  { name: "Partner Four", tagline: "Student chapter" },
-  { name: "Partner Five", tagline: "DevOps community" },
-  { name: "Partner Six", tagline: "Open source org" },
-  { name: "Partner Seven", tagline: "Cybersecurity chapter" },
-  { name: "Partner Eight", tagline: "Cloud-native group" },
-  { name: "Partner Nine", tagline: "Women in tech" },
-  { name: "Partner Ten", tagline: "Hackathon collective" },
-  { name: "Partner Eleven", tagline: "Platform engineering" },
-  { name: "Partner Twelve", tagline: "Data & ML community" },
+  { name: "Artificial Intelligence Society", logo: "/community/Artificial Intelligence Society.png" },
+  { name: "AWS Cloud Clubs PIEAS", logo: "/community/AWS Cloud Clubs PIEAS.png" },
+  { name: "AWS Cloud Clubs QAU", logo: "/community/AWS Cloud Clubs QAU.png" },
+  { name: "AWS SBG NUTECH", logo: "/community/AWS SBG NUTECH.jfif" },
+  { name: "AWS SBG UOH", logo: "/community/AWS SBG UOH.png" },
+  { name: "BBAI", logo: "/community/BBAI.png" },
+  { name: "CAUSE Society", logo: "/community/CAUSE Society.png" },
+  { name: "Confiniti QAU Chapter", logo: "/community/Confiniti QAU Chapter.png" },
+  { name: "Digital Finance & Trade Society IIUI", logo: "/community/Digital Finance & Trade Society IIUI.png" },
+  { name: "GDGoC IIUI", logo: "/community/GDGoC IIUI.png" },
+  { name: "Islamians Youth Club — IIUI", logo: "/community/Islamians Youth Club - IIUI.png" },
+  { name: "IT Computing Society", logo: "/community/IT Computing Society.png" },
+  { name: "MLSA Quaid-i-Azam University", logo: "/community/MLSA Quaid-i-Azam University.png" },
+  { name: "MLSA UET Peshawar", logo: "/community/MLSA UET Peshawar.png" },
+  { name: "SENSE — IIUI", logo: "/community/SENSE-IIUI.png" },
+  { name: "SSCIT", logo: "/community/SSCIT.png" },
+  { name: "The Computer Science Society", logo: "/community/The Computer Science Society Logo.gif" },
 ];
 
 const initialsOf = (name: string) =>
