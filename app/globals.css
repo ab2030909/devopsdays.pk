@@ -241,8 +241,20 @@ body {
   .shadow-neon, .shadow-neon-lg { box-shadow: none !important; }
   /* Each top-level section starts fresh on a new page */
   article > div > section { break-inside: avoid; }
-  .break-inside-avoid { break-inside: avoid; }
+  .break-inside-avoid { break-inside: avoid; page-break-inside: avoid; }
   /* Cover and closing slides each get their own page */
   .deck-page { break-after: page; page-break-after: always; }
-  @page { size: A4; margin: 14mm 12mm; }
+  /* Tighten cover vertical rhythm on print so everything fits on page 1 */
+  .deck-page .mt-8  { margin-top: 0.75rem !important; }
+  .deck-page .mt-10 { margin-top: 0.875rem !important; }
+  .deck-page .mt-12 { margin-top: 1rem !important; }
+  .deck-page .pb-12 { padding-bottom: 0.5rem !important; }
+  .deck-page .pt-8  { padding-top: 0.5rem !important; }
+  .deck-page .mb-6  { margin-bottom: 0.5rem !important; }
+  /* keep organizer block together no matter what */
+  .deck-page [class*="break-inside-avoid"] {
+    break-inside: avoid !important;
+    page-break-inside: avoid !important;
+  }
+  @page { size: A4; margin: 12mm 10mm; }
 }

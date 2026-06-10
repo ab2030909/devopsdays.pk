@@ -12,7 +12,7 @@ import { Printer, ArrowLeft, Calendar, MapPin, CheckCircle2 } from "lucide-react
 const heroStats = [
   { v: "300+", l: "Attendees" },
   { v: "10+", l: "Speakers" },
-  { v: "30+", l: "Communities" },
+  { v: "50+", l: "Communities" },
   { v: "6",   l: "Tracks" },
 ];
 
@@ -30,7 +30,7 @@ const benefits = [
   ["Recruitment",          "Direct access to Islamabad's fastest-growing engineering talent"],
   ["Technical Audience",   "Engineers, architects, AI builders and platform teams"],
   ["Product Showcasing",   "Demo to a focused, high-intent technical audience"],
-  ["Social Promotions",    "Co-marketing across our channels and 30+ partner communities"],
+  ["Social Promotions",    "Co-marketing across our channels and 50+ partner communities"],
   ["Ecosystem Recognition","Position your brand as a leader of national tech infrastructure"],
 ];
 
@@ -46,55 +46,55 @@ const tiers = [
     name: "Platinum",
     accent: "from-neon-glow via-neon to-neon-violet",
     badge: "bg-neon-glow/20 text-neon-glow",
-    usd: "USD 2,500",
-    pkr: "≈ PKR 700,000",
+    usd: "USD 1800",
+    pkr: "≈ PKR 500,000",
     slots: "1 slot",
     exclusive: true,
     perks: [
-      "Title sponsor — name in the conference billing",
-      "20-minute keynote on the main stage",
+      "Title sponsor name in the conference billing",
+      "Exclusive Powered By placement everywhere.",
       "Co-branded backdrop on stage",
       "Logo on every digital and print asset",
       "Logo on conference t-shirts (front)",
       "4 dedicated social posts + 2 reels",
-      "Newsletter feature — pre & post event",
+      "Newsletter feature, pre & post event",
       "Lead capture: full attendee opt-in list",
       "Custom activation (workshop / hackathon / lounge)",
       "Recruitment & talent-introduction privileges",
-      "8 attendee passes",
+      "12 attendee passes",
     ],
   },
   {
     name: "Gold",
     accent: "from-yellow-200 via-amber-300 to-amber-500",
     badge: "bg-amber-400/20 text-amber-300",
-    usd: "USD 2,000",
-    pkr: "≈ PKR 560,000",
+    usd: "USD 1,100",
+    pkr: "≈ PKR 300,000",
     slots: "2 slots",
     perks: [
-      "10-minute talk on a track stage",
+      
       "Logo on stage backdrop & website",
       "Logo on conference t-shirts (sleeve)",
       "2 dedicated social posts",
       "Newsletter mention",
       "Lead capture from opt-in scans",
       "Recruitment & talent-introduction privileges",
-      "5 attendee passes",
+      "10 attendee passes",
     ],
   },
   {
     name: "Silver",
     accent: "from-zinc-200 via-zinc-300 to-zinc-500",
     badge: "bg-zinc-400/20 text-zinc-300",
-    usd: "USD 1,000",
-    pkr: "≈ PKR 280,000",
+    usd: "USD 7,000",
+    pkr: "≈ PKR 200,000",
     slots: "4 slots",
     perks: [
       "Logo on website + sponsors slide",
-      "1 dedicated social post",
+      "2 dedicated social post",
       "Mention in opening keynote",
       "Recruitment & talent-introduction privileges",
-      "3 attendee passes",
+      "7 attendee passes",
     ],
   },
   {
@@ -107,7 +107,8 @@ const tiers = [
       "Logo on website",
       "Mention in the opening keynote",
       "Optional swag in attendee bag",
-      "2 attendee passes",
+      "1 dedicated social post",
+      "5 attendee passes",
     ],
   },
   {
@@ -119,7 +120,8 @@ const tiers = [
     perks: [
       "Logo on community sponsors page",
       "Mention in the opening sponsor reel",
-      "1 attendee pass",
+      "1 dedicated social post",
+      "3 attendee pass",
     ],
   },
 ];
@@ -161,8 +163,8 @@ export default function DeckView() {
               Sponsorship Deck · 2026
             </motion.div>
 
-            {/* logo */}
-            <div className="relative mx-auto w-full max-w-[380px] sm:max-w-[440px] aspect-square">
+            {/* logo — smaller on print to save vertical space */}
+            <div className="relative mx-auto w-full max-w-[380px] sm:max-w-[440px] aspect-square print:max-w-[280px]">
               <Image
                 src="/hero-logo.webp"
                 alt="DevOps Days Islamabad 2026"
@@ -205,8 +207,9 @@ export default function DeckView() {
               {heroStats.map((s) => <StatCard key={s.l} large={s.v} label={s.l} />)}
             </div>
 
-            {/* organizer logos */}
-            <div className="relative mt-10">
+            {/* organizer logos — kept in the same break-avoid block so
+                they never split across pages when printing */}
+            <div className="relative mt-10 break-inside-avoid">
               <p className="font-mono text-[10px] uppercase tracking-[0.3em] text-neon-glow/80 mb-4">
                 Organized By
               </p>
@@ -408,7 +411,7 @@ export default function DeckView() {
                 "X / Twitter daily reels & spotlights",
                 "Instagram partner takeovers + reels",
                 "Newsletter — pre and post-event editions",
-                "30+ community partner channels cross-posting",
+                "50+ community partner channels cross-posting",
               ].map((line) => (
                 <div key={line} className="glass rounded-lg px-3 py-2 flex items-center gap-2 text-ink/80">
                   <CheckCircle2 className="h-3.5 w-3.5 text-neon-glow shrink-0" />
@@ -419,7 +422,7 @@ export default function DeckView() {
             <div className="grid sm:grid-cols-3 gap-3 mt-5">
               <StatCard large="50K+" label="Estimated impressions" />
               <StatCard large="6 wks" label="Campaign window" />
-              <StatCard large="30+" label="Partner communities" />
+              <StatCard large="50+" label="Partner communities" />
             </div>
           </Section>
 
@@ -461,7 +464,7 @@ export default function DeckView() {
                 Reach out — we&apos;ll send the full partnership agreement within 48 hours.
               </p>
               <div className="mt-8 flex flex-wrap items-center justify-center gap-3">
-                <a href="mailto:hello@devopsdays.pk" className="btn-primary">
+                <a href="mailto:islamabad@devopsdays.org" className="btn-primary">
                   hello@devopsdays.pk
                 </a>
                 <a href="tel:+923151537220" className="btn-secondary">
