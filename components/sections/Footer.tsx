@@ -9,7 +9,7 @@ const socials = [
   { icon: Instagram, href: "#", label: "Instagram" },
   { icon: Twitter, href: "#", label: "X / Twitter" },
   { icon: MessageCircle, href: "#", label: "Discord" },
-  { icon: Mail, href: "mailto:hello@devopsdays.pk", label: "Email" },
+  { icon: Mail, href: "mailto:islamabad@devopsdays.org", label: "Email" },
 ];
 
 const navGroups = [
@@ -38,7 +38,7 @@ const navGroups = [
       { label: "Sponsorship Deck", href: "/deck" },
       { label: "Code of Conduct", href: "#" },
       { label: "Press Kit", href: "#" },
-      { label: "Contact", href: "mailto:hello@devopsdays.pk" },
+      { label: "Contact", href: "mailto:islamabad@devopsdays.org" },
     ],
   },
 ];
@@ -136,10 +136,10 @@ export default function Footer() {
                 Contact
               </div>
               <a
-                href="mailto:hello@devopsdays.pk"
+                href="mailto:islamabad@devopsdays.org"
                 className="text-sm text-ink/70 hover:text-ink transition block"
               >
-                hello@devopsdays.pk
+                islamabad@devopsdays.org
               </a>
               <div className="text-sm text-ink/60 mt-2">Islamabad, Pakistan</div>
               <div className="text-sm text-ink/60">September 2026</div>

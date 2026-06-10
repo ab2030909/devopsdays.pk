@@ -211,7 +211,7 @@ Sponsors are amplified across:
 
 ## Contact
 
-**hello@devopsdays.pk**
+**islamabad@devopsdays.org**
 
 **+92 315 1537220**
 

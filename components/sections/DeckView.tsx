@@ -465,7 +465,7 @@ export default function DeckView() {
               </p>
               <div className="mt-8 flex flex-wrap items-center justify-center gap-3">
                 <a href="mailto:islamabad@devopsdays.org" className="btn-primary">
-                  hello@devopsdays.pk
+                  islamabad@devopsdays.org
                 </a>
                 <a href="tel:+923151537220" className="btn-secondary">
                   +92 315 1537220
