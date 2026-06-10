@@ -1,4 +1,4 @@
-"use client";
+﻿"use client";
 
 import { useState } from "react";
 import { motion, AnimatePresence } from "framer-motion";
@@ -45,7 +45,7 @@ export default function FAQ() {
               Questions <span className="gradient-text">answered.</span>
             </>
           }
-          description="Everything you need to know about attending, sponsoring and partnering with DevOps Days Pakistan 2026."
+          description="Everything you need to know about attending, sponsoring and partnering with DevOps Days Islamabad 2026."
         />
 
         <div className="mx-auto mt-12 max-w-3xl">

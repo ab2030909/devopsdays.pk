@@ -1,4 +1,4 @@
-"use client";
+﻿"use client";
 
 import { motion } from "framer-motion";
 import { Linkedin, Instagram, Twitter, MessageCircle, Mail } from "lucide-react";
@@ -63,13 +63,13 @@ export default function Footer() {
             className="text-center max-w-3xl mx-auto"
           >
             <h2 className="font-display text-4xl sm:text-5xl lg:text-6xl font-bold tracking-tight">
-              Building <span className="text-neon-glow">·</span> Automating{" "}
-              <span className="text-neon-glow">·</span>{" "}
+              Building <span className="text-neon-glow">Â·</span> Automating{" "}
+              <span className="text-neon-glow">Â·</span>{" "}
               <span className="gradient-text">Scaling Pakistan&apos;s Future</span>
             </h2>
             <p className="mt-5 text-ink/70">
               Join Pakistan&apos;s national DevOps and Agentic AI movement.
-              Engineers, communities, sponsors and AI builders — let&apos;s
+              Engineers, communities, sponsors and AI builders â€” let&apos;s
               shape the next decade of infrastructure together.
             </p>
             <div className="mt-8 flex flex-wrap justify-center gap-3">
@@ -89,13 +89,13 @@ export default function Footer() {
                 <div className="leading-tight">
                   <div className="font-display font-semibold">DevOps Days</div>
                   <div className="text-[10px] font-mono uppercase tracking-[0.22em] text-neon-glow/80">
-                    Pakistan · 2026
+                    Pakistan Â· 2026
                   </div>
                 </div>
               </div>
               <p className="mt-5 text-sm text-ink/60 max-w-sm">
                 Pakistan&apos;s premier community-led DevOps & Agentic AI
-                conference. Islamabad · September 2026.
+                conference. Islamabad Â· September 2026.
               </p>
               <div className="mt-5 flex items-center gap-2">
                 {socials.map((s) => (
@@ -149,10 +149,10 @@ export default function Footer() {
           <div className="mt-14 divider-glow" />
           <div className="mt-6 flex flex-col sm:flex-row items-center justify-between gap-3 text-xs text-ink/50">
             <div className="font-mono">
-              © 2026 DevOps Days Pakistan. All systems nominal.
+              Â© 2026 DevOps Days Islamabad. All systems nominal.
             </div>
             <div className="font-mono uppercase tracking-[0.2em]">
-              v.2026 · build.000 · region.isb
+              v.2026 Â· build.000 Â· region.isb
             </div>
           </div>
           <div className="mt-3 text-[10px] text-ink/35 font-mono text-center sm:text-right">
@@ -165,7 +165,7 @@ export default function Footer() {
             >
               hqakhtar/PakistanMap
             </a>{" "}
-            · MIT
+            Â· MIT
           </div>
         </div>
       </div>

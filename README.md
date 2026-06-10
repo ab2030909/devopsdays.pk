@@ -1,10 +1,10 @@
-# DevOps Days Pakistan 2026
+﻿# DevOps Days Islamabad 2026
 
 Pakistan's premier community-led DevOps & Agentic AI conference website.
 
-**Islamabad · 26 September 2026**
+**Islamabad Â· 26 September 2026**
 
-> Built with [**Kiro**](https://kiro.dev) — an AI-powered IDE for shipping
+> Built with [**Kiro**](https://kiro.dev) â€” an AI-powered IDE for shipping
 > production apps end-to-end through conversation.
 
 ---
@@ -15,7 +15,7 @@ Pakistan's premier community-led DevOps & Agentic AI conference website.
 - Tailwind CSS with a custom neon theme
 - Framer Motion for animations
 - lucide-react for icons
-- Pure SVG / canvas visuals — no heavy 3D libs
+- Pure SVG / canvas visuals â€” no heavy 3D libs
 
 ---
 
@@ -44,7 +44,7 @@ npm run lint       # eslint + type-check
 
 | Path         | Page                                                        |
 | ------------ | ----------------------------------------------------------- |
-| `/`          | Home — hero, organizers, stats, about, tracks, venue, why attend, speakers, FAQ |
+| `/`          | Home â€” hero, organizers, stats, about, tracks, venue, why attend, speakers, FAQ |
 | `/sponsors`  | Sponsorship benefits and tier list                          |
 | `/partners`  | Community partners grid + apply CTA                         |
 
@@ -54,42 +54,42 @@ npm run lint       # eslint + type-check
 
 ```
 app/                              Next.js routes
-├── layout.tsx                    Root layout, fonts, metadata
-├── page.tsx                      Home page composition
-├── globals.css                   Theme tokens + utilities
-├── sponsors/page.tsx
-├── partners/page.tsx
-├── robots.ts
-└── sitemap.ts
+â”œâ”€â”€ layout.tsx                    Root layout, fonts, metadata
+â”œâ”€â”€ page.tsx                      Home page composition
+â”œâ”€â”€ globals.css                   Theme tokens + utilities
+â”œâ”€â”€ sponsors/page.tsx
+â”œâ”€â”€ partners/page.tsx
+â”œâ”€â”€ robots.ts
+â””â”€â”€ sitemap.ts
 
 components/
-├── Navbar.tsx                    Route-aware sticky nav
-├── Logo.tsx                      Inline SVG mark
-├── PakistanMap.tsx               Hero artwork wrapper
-├── pakistanPaths.ts              Auto-generated province paths
-├── CountdownTerminal.tsx         Live countdown to 26 Sept 2026
-├── InfraVisual.tsx               Animated DevOps "control center"
-├── Particles.tsx                 Linked-dot canvas
-├── GridBackground.tsx
-├── Fireworks.tsx                 Canvas fireworks (venue panel)
-├── AnimatedCounter.tsx
-├── SectionHeader.tsx
-└── sections/
-    ├── Hero.tsx
-    ├── OrganizedBy.tsx
-    ├── Stats.tsx
-    ├── About.tsx
-    ├── Tracks.tsx
-    ├── WhyAttend.tsx
-    ├── Speakers.tsx
-    ├── Sponsors.tsx
-    ├── SponsorsHero.tsx
-    ├── PartnersHero.tsx
-    ├── PartnersGrid.tsx          Edit COMMUNITY_PARTNERS here
-    ├── PartnersJoinCTA.tsx
-    ├── Venue.tsx                 Skyline + clouds + fireworks + floodlights
-    ├── FAQ.tsx
-    └── Footer.tsx
+â”œâ”€â”€ Navbar.tsx                    Route-aware sticky nav
+â”œâ”€â”€ Logo.tsx                      Inline SVG mark
+â”œâ”€â”€ PakistanMap.tsx               Hero artwork wrapper
+â”œâ”€â”€ pakistanPaths.ts              Auto-generated province paths
+â”œâ”€â”€ CountdownTerminal.tsx         Live countdown to 26 Sept 2026
+â”œâ”€â”€ InfraVisual.tsx               Animated DevOps "control center"
+â”œâ”€â”€ Particles.tsx                 Linked-dot canvas
+â”œâ”€â”€ GridBackground.tsx
+â”œâ”€â”€ Fireworks.tsx                 Canvas fireworks (venue panel)
+â”œâ”€â”€ AnimatedCounter.tsx
+â”œâ”€â”€ SectionHeader.tsx
+â””â”€â”€ sections/
+    â”œâ”€â”€ Hero.tsx
+    â”œâ”€â”€ OrganizedBy.tsx
+    â”œâ”€â”€ Stats.tsx
+    â”œâ”€â”€ About.tsx
+    â”œâ”€â”€ Tracks.tsx
+    â”œâ”€â”€ WhyAttend.tsx
+    â”œâ”€â”€ Speakers.tsx
+    â”œâ”€â”€ Sponsors.tsx
+    â”œâ”€â”€ SponsorsHero.tsx
+    â”œâ”€â”€ PartnersHero.tsx
+    â”œâ”€â”€ PartnersGrid.tsx          Edit COMMUNITY_PARTNERS here
+    â”œâ”€â”€ PartnersJoinCTA.tsx
+    â”œâ”€â”€ Venue.tsx                 Skyline + clouds + fireworks + floodlights
+    â”œâ”€â”€ FAQ.tsx
+    â””â”€â”€ Footer.tsx
 
 public/                           Static assets
 scripts/                          One-shot helper scripts (see below)
@@ -109,15 +109,15 @@ component. No CMS, no JSON glue.
 | What                         | Where                                                |
 | ---------------------------- | ---------------------------------------------------- |
 | Hero heading + meta          | `components/sections/Hero.tsx`                       |
-| Countdown target date        | `components/CountdownTerminal.tsx` — `TARGET` const  |
-| Organizers (CNI / CNSP)      | `components/sections/OrganizedBy.tsx` — `organizers` |
-| Stats numbers                | `components/sections/Stats.tsx` — `stats`            |
+| Countdown target date        | `components/CountdownTerminal.tsx` â€” `TARGET` const  |
+| Organizers (CNI / CNSP)      | `components/sections/OrganizedBy.tsx` â€” `organizers` |
+| Stats numbers                | `components/sections/Stats.tsx` â€” `stats`            |
 | About copy + pillars         | `components/sections/About.tsx`                      |
-| Conference tracks            | `components/sections/Tracks.tsx` — `tracks`          |
-| Why Attend audiences         | `components/sections/WhyAttend.tsx` — `audiences`    |
+| Conference tracks            | `components/sections/Tracks.tsx` â€” `tracks`          |
+| Why Attend audiences         | `components/sections/WhyAttend.tsx` â€” `audiences`    |
 | Sponsor benefits + tiers     | `components/sections/Sponsors.tsx`                   |
-| Community partners list      | `components/sections/PartnersGrid.tsx` — `COMMUNITY_PARTNERS` |
-| FAQ Q&A                      | `components/sections/FAQ.tsx` — `faqs`               |
+| Community partners list      | `components/sections/PartnersGrid.tsx` â€” `COMMUNITY_PARTNERS` |
+| FAQ Q&A                      | `components/sections/FAQ.tsx` â€” `faqs`               |
 | Footer links + socials       | `components/sections/Footer.tsx`                     |
 
 ### Add a community partner
@@ -220,7 +220,7 @@ All animations respect `prefers-reduced-motion: reduce`.
 - Keyboard-focusable links with a visible neon focus ring
 
 Full WCAG validation requires manual testing with assistive tech and
-expert review — this codebase aims for AA by default but isn't externally
+expert review â€” this codebase aims for AA by default but isn't externally
 audited.
 
 ---
@@ -234,7 +234,7 @@ MIT.
 - Pakistan administrative boundaries derived from
   [hqakhtar/PakistanMap](https://github.com/hqakhtar/PakistanMap) (MIT).
 - Icons from [lucide-react](https://lucide.dev) (ISC).
-- Fonts: Inter, Space Grotesk, JetBrains Mono — open licenses, served via
+- Fonts: Inter, Space Grotesk, JetBrains Mono â€” open licenses, served via
   `next/font`.
 - Skyline and hero artwork: provided by the organizers.
 
@@ -243,7 +243,7 @@ MIT.
 ## Built with Kiro
 
 This site was designed, built, and iterated end-to-end with
-[**Kiro**](https://kiro.dev) — the AI-powered IDE that lets developers
+[**Kiro**](https://kiro.dev) â€” the AI-powered IDE that lets developers
 focus on system design and decisions while shipping faster. Kiro
 scaffolded the Next.js app, generated the animated Pakistan political map
 from public GeoJSON, built the live countdown, control-center panel,
@@ -251,4 +251,4 @@ fireworks and skyline, and wired up the routing and SEO.
 
 ---
 
-**Building • Automating • Scaling Pakistan's Future**
+**Building â€¢ Automating â€¢ Scaling Pakistan's Future**

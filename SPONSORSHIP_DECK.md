@@ -1,22 +1,22 @@
-# DevOps Days Pakistan 2026
+﻿# DevOps Days Islamabad 2026
 ## Sponsorship Deck
 
 **Pakistan's premier community-led DevOps & Agentic AI conference**
 
-📍 Islamabad · 📅 26 September 2026
+ðŸ“ Islamabad Â· ðŸ“… 26 September 2026
 
 ---
 
-## 01 · The Opportunity
+## 01 Â· The Opportunity
 
 Pakistan is at an inflection point.
 
 - **240+ million people**, the world's 5th-most populous country
-- **Over 60% under the age of 30** — one of the largest digital-native populations on the planet
+- **Over 60% under the age of 30** â€” one of the largest digital-native populations on the planet
 - **Software exports crossed $3.2B in FY24** and are projected to keep doubling
 - **300+ active local communities** spanning Cloud-Native, AI, Cybersecurity, MLOps and Platform Engineering
 
-DevOps Days Pakistan 2026 is the single national stage where Pakistan's
+DevOps Days Islamabad 2026 is the single national stage where Pakistan's
 fast-growing engineering, AI and infrastructure ecosystem comes together
 for one day in the country's capital.
 
@@ -24,9 +24,9 @@ We are inviting select sponsors to back the moment.
 
 ---
 
-## 02 · About the Conference
+## 02 Â· About the Conference
 
-DevOps Days Pakistan 2026 is a national community-led conference focused on
+DevOps Days Islamabad 2026 is a national community-led conference focused on
 **DevOps culture, cloud-native systems, platform engineering, AI-powered
 automation, Site Reliability Engineering, DevSecOps, and Agentic AI**.
 
@@ -45,12 +45,12 @@ The event will feature:
 
 ### Organized By
 
-- **Cloud Native Islamabad** — the city's flagship cloud-native community
-- **Cloud Native Security Pakistan** — DevSecOps & cloud-security chapter
+- **Cloud Native Islamabad** â€” the city's flagship cloud-native community
+- **Cloud Native Security Pakistan** â€” DevSecOps & cloud-security chapter
 
 ---
 
-## 03 · By the Numbers
+## 03 Â· By the Numbers
 
 | Metric                          | Target           |
 | ------------------------------- | ---------------- |
@@ -63,7 +63,7 @@ The event will feature:
 
 ---
 
-## 04 · Who's in the Room
+## 04 Â· Who's in the Room
 
 | Audience segment    | Approx. share |
 | ------------------- | ------------- |
@@ -81,18 +81,18 @@ The event will feature:
 
 ---
 
-## 05 · Conference Tracks
+## 05 Â· Conference Tracks
 
-1. **DevOps & Automation** — CI/CD, GitOps, IaC, deployment strategies
-2. **Agentic AI** — autonomous agents, multi-agent orchestration, AI workflows
-3. **Cloud & Platform Engineering** — IDPs, multi-cloud, abstractions
-4. **DevSecOps** — shift-left security, supply-chain hardening, policy as code
-5. **SRE & Observability** — SLOs, telemetry, incident response, reliability
-6. **MLOps & AI Infrastructure** — model serving, GPU orchestration, vector DBs
+1. **DevOps & Automation** â€” CI/CD, GitOps, IaC, deployment strategies
+2. **Agentic AI** â€” autonomous agents, multi-agent orchestration, AI workflows
+3. **Cloud & Platform Engineering** â€” IDPs, multi-cloud, abstractions
+4. **DevSecOps** â€” shift-left security, supply-chain hardening, policy as code
+5. **SRE & Observability** â€” SLOs, telemetry, incident response, reliability
+6. **MLOps & AI Infrastructure** â€” model serving, GPU orchestration, vector DBs
 
 ---
 
-## 06 · Why Sponsor
+## 06 Â· Why Sponsor
 
 | Benefit                  | What it means for you                               |
 | ------------------------ | --------------------------------------------------- |
@@ -105,15 +105,15 @@ The event will feature:
 
 ---
 
-## 07 · Sponsorship Tiers
+## 07 Â· Sponsorship Tiers
 
 > All amounts are placeholders. Replace with your final pricing if needed.
-> PKR conversions assume 1 USD ≈ 280 PKR.
+> PKR conversions assume 1 USD â‰ˆ 280 PKR.
 
-### 🟪 Platinum — `USD 2,500` / `≈ PKR 700,000` *(1 slot)*
+### ðŸŸª Platinum â€” `USD 2,500` / `â‰ˆ PKR 700,000` *(1 slot)*
 **Title-level visibility. Limited to a single partner.**
 
-- Title sponsor: "DevOps Days Pakistan 2026, presented by [Brand]"
+- Title sponsor: "DevOps Days Islamabad 2026, presented by [Brand]"
 - 20-minute keynote slot on the main stage
 - Logo on the main media wall (premium placement)
 - Dedicated standee at the venue
@@ -128,7 +128,7 @@ The event will feature:
 - Recruitment & talent-introduction privileges
 - 8 attendee passes
 
-### 🟡 Gold — `USD 2,000` / `≈ PKR 560,000` *(2 slots)*
+### ðŸŸ¡ Gold â€” `USD 2,000` / `â‰ˆ PKR 560,000` *(2 slots)*
 - 10-minute talk slot on a track stage
 - Logo on the main media wall
 - Dedicated standee at the venue
@@ -141,7 +141,7 @@ The event will feature:
 - Recruitment & talent-introduction privileges
 - 5 attendee passes
 
-### ⚪ Silver — `USD 1,000` / `≈ PKR 280,000` *(4 slots)*
+### âšª Silver â€” `USD 1,000` / `â‰ˆ PKR 280,000` *(4 slots)*
 - Logo on the main media wall
 - Dedicated standee at the venue
 - Pre-event and post-event social media posts (dedicated)
@@ -151,7 +151,7 @@ The event will feature:
 - Recruitment & talent-introduction privileges
 - 3 attendee passes
 
-### 🟫 Bronze — `USD 500` / `≈ PKR 140,000`
+### ðŸŸ« Bronze â€” `USD 500` / `â‰ˆ PKR 140,000`
 - Logo on the main media wall
 - Dedicated standee at the venue
 - Pre-event and post-event social media posts (dedicated)
@@ -160,7 +160,7 @@ The event will feature:
 - Optional swag in attendee bag
 - 2 attendee passes
 
-### 💧 Ecosystem — `USD 250` / `≈ PKR 70,000`
+### ðŸ’§ Ecosystem â€” `USD 250` / `â‰ˆ PKR 70,000`
 - Logo on the main media wall
 - Dedicated standee at the venue
 - Pre-event and post-event social media posts (dedicated)
@@ -170,36 +170,36 @@ The event will feature:
 
 ---
 
-## 08 · Marketing & Reach
+## 08 Â· Marketing & Reach
 
 Sponsors are amplified across:
 
-- **Website** — devopsdays.pk (logo, tier, link)
-- **LinkedIn** — pre-event countdown campaign + day-of coverage
-- **X / Twitter** — daily reels and thread spotlights
-- **Instagram** — partner takeovers + reels
-- **Newsletter** — pre and post-event editions to opt-in attendees
-- **Community partner channels** — 30+ partner communities cross-post sponsor highlights
+- **Website** â€” devopsdays.pk (logo, tier, link)
+- **LinkedIn** â€” pre-event countdown campaign + day-of coverage
+- **X / Twitter** â€” daily reels and thread spotlights
+- **Instagram** â€” partner takeovers + reels
+- **Newsletter** â€” pre and post-event editions to opt-in attendees
+- **Community partner channels** â€” 30+ partner communities cross-post sponsor highlights
 
 > Estimated total reach across owned + partner channels: **>50,000**
 > tech-aligned impressions in the 6-week campaign window.
 
 ---
 
-## 09 · Past Success & Credibility
+## 09 Â· Past Success & Credibility
 
 > Replace with concrete numbers from your previous events / community
 > growth metrics.
 
-- Cloud Native Islamabad — XX events delivered, XXXX active members
-- Cloud Native Security Pakistan — XX events delivered, XXXX active members
+- Cloud Native Islamabad â€” XX events delivered, XXXX active members
+- Cloud Native Security Pakistan â€” XX events delivered, XXXX active members
 - Combined newsletter list: XXXX engineers
 - Combined social reach: XXXX followers across LinkedIn / X / Instagram
 - Past sponsor logos / testimonials *(insert)*
 
 ---
 
-## 09 · How to Become a Sponsor
+## 09 Â· How to Become a Sponsor
 
 1. **Reply to this deck** indicating your tier of interest.
 2. We send the partnership agreement within 48 hours.
@@ -215,10 +215,10 @@ Sponsors are amplified across:
 
 **+92 315 1537220**
 
-Website · [devopsdays.pk](https://devopsdays.pk)
+Website Â· [devopsdays.pk](https://devopsdays.pk)
 
-Instagram · LinkedIn · X *(handles to be filled in)*
+Instagram Â· LinkedIn Â· X *(handles to be filled in)*
 
 ---
 
-> *Building • Automating • Scaling Pakistan's Future*
+> *Building â€¢ Automating â€¢ Scaling Pakistan's Future*

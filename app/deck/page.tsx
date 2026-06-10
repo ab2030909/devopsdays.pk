@@ -1,10 +1,10 @@
-import type { Metadata } from "next";
+﻿import type { Metadata } from "next";
 import DeckView from "@/components/sections/DeckView";
 
 export const metadata: Metadata = {
   title: "Sponsorship Deck",
   description:
-    "DevOps Days Pakistan 2026 — sponsorship deck. Browse, print, or save as PDF.",
+    "DevOps Days Islamabad 2026 â€” sponsorship deck. Browse, print, or save as PDF.",
 };
 
 export default function DeckPage() {

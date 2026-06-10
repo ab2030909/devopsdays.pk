@@ -1,10 +1,10 @@
-"use client";
+﻿"use client";
 
 import Image from "next/image";
 import { motion, useReducedMotion } from "framer-motion";
 
 /**
- * Hero visual: the actual DevOps Days Pakistan 2026 logo / map artwork.
+ * Hero visual: the actual DevOps Days Islamabad 2026 logo / map artwork.
  * Black background already removed (see public/hero-logo-transparent.png),
  * so the artwork sits cleanly on the hero gradient with no halo wash.
  */
@@ -32,7 +32,7 @@ export default function PakistanMap({
         >
           <Image
             src="/hero-logo.webp"
-            alt="DevOps Days Pakistan 2026"
+            alt="DevOps Days Islamabad 2026"
             fill
             priority
             sizes="(min-width: 1024px) 860px, 100vw"

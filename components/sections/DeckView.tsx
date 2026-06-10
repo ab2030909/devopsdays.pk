@@ -1,4 +1,4 @@
-"use client";
+﻿"use client";
 
 import Image from "next/image";
 import Link from "next/link";
@@ -40,10 +40,10 @@ const tiers = [
     name: "Platinum",
     accent: "from-neon-glow via-neon to-neon-violet",
     usd: "USD 2,500",
-    pkr: "≈ PKR 700,000",
+    pkr: "â‰ˆ PKR 700,000",
     slots: "1 slot",
     perks: [
-      "Title sponsor — name in the conference billing",
+      "Title sponsor â€” name in the conference billing",
       "20-min keynote on the main stage",
       "Logo on the main media wall (premium placement)",
       "Dedicated standee at the venue",
@@ -62,7 +62,7 @@ const tiers = [
     name: "Gold",
     accent: "from-yellow-200 via-amber-300 to-amber-500",
     usd: "USD 2,000",
-    pkr: "≈ PKR 560,000",
+    pkr: "â‰ˆ PKR 560,000",
     slots: "2 slots",
     perks: [
       "10-min talk on a track stage",
@@ -82,7 +82,7 @@ const tiers = [
     name: "Silver",
     accent: "from-zinc-200 via-zinc-300 to-zinc-500",
     usd: "USD 1,000",
-    pkr: "≈ PKR 280,000",
+    pkr: "â‰ˆ PKR 280,000",
     slots: "4 slots",
     perks: [
       "Logo on the main media wall",
@@ -99,7 +99,7 @@ const tiers = [
     name: "Bronze",
     accent: "from-amber-500 via-orange-600 to-rose-700",
     usd: "USD 500",
-    pkr: "≈ PKR 140,000",
+    pkr: "â‰ˆ PKR 140,000",
     perks: [
       "Logo on the main media wall",
       "Dedicated standee at the venue",
@@ -114,7 +114,7 @@ const tiers = [
     name: "Ecosystem",
     accent: "from-cyan-300 via-cyan-400 to-cyan-600",
     usd: "USD 250",
-    pkr: "≈ PKR 70,000",
+    pkr: "â‰ˆ PKR 70,000",
     perks: [
       "Logo on the main media wall",
       "Dedicated standee at the venue",
@@ -129,7 +129,7 @@ const tiers = [
 export default function DeckView() {
   return (
     <main className="relative pb-24 print:pb-0">
-      {/* top toolbar — hidden when printing */}
+      {/* top toolbar â€” hidden when printing */}
       <div className="sticky top-0 z-50 bg-background/85 backdrop-blur-md border-b border-neon/15 print:hidden">
         <div className="container-px py-3 flex items-center gap-3">
           <Link
@@ -154,7 +154,7 @@ export default function DeckView() {
       <article className="container-px mt-8 print:mt-0">
         <div className="mx-auto max-w-4xl space-y-20 print:space-y-12">
           {/* ==================================================== */}
-          {/* COVER PAGE — full bleed feel, force own print page    */}
+          {/* COVER PAGE â€” full bleed feel, force own print page    */}
           {/* ==================================================== */}
           <section className="deck-page relative text-center pt-6 pb-10 print:pt-0">
             <CoverBackdrop />
@@ -164,14 +164,14 @@ export default function DeckView() {
               animate={{ opacity: 1, y: 0 }}
               className="relative chip mx-auto"
             >
-              Sponsorship Deck · 2026
+              Sponsorship Deck Â· 2026
             </motion.div>
 
-            {/* hero logo — same artwork the home page uses */}
+            {/* hero logo â€” same artwork the home page uses */}
             <div className="relative mx-auto mt-8 mb-6 w-full max-w-md aspect-square">
               <Image
                 src="/hero-logo.webp"
-                alt="DevOps Days Pakistan 2026"
+                alt="DevOps Days Islamabad 2026"
                 fill
                 priority
                 sizes="(min-width: 768px) 480px, 90vw"
@@ -218,7 +218,7 @@ export default function DeckView() {
               ))}
             </div>
 
-            {/* organizer crest strip — real logos */}
+            {/* organizer crest strip â€” real logos */}
             <div className="relative mt-12">
               <div className="font-mono text-[10px] uppercase tracking-[0.32em] text-neon-glow/85 mb-4">
                 Organized By
@@ -238,7 +238,7 @@ export default function DeckView() {
             </div>
           </section>
 
-          <DeckDivider label="01 · Opportunity" />
+          <DeckDivider label="01 Â· Opportunity" />
 
           {/* ==================================================== */}
           {/* OPPORTUNITY                                            */}
@@ -252,7 +252,7 @@ export default function DeckView() {
               AI community across <strong>300+ active local groups</strong>.
             </p>
             <p>
-              DevOps Days Pakistan 2026 is the single national stage where this
+              DevOps Days Islamabad 2026 is the single national stage where this
               fast-growing engineering, AI and infrastructure ecosystem comes
               together for one day in the country&apos;s capital. We&apos;re
               inviting select sponsors to back the moment.
@@ -268,7 +268,7 @@ export default function DeckView() {
           {/* ==================================================== */}
           {/* ABOUT                                                  */}
           {/* ==================================================== */}
-          <Section title="About the Conference" eyebrow="02 · The event">
+          <Section title="About the Conference" eyebrow="02 Â· The event">
             <p>
               A national community-led conference focused on{" "}
               <strong>
@@ -292,7 +292,7 @@ export default function DeckView() {
                   key={line}
                   className="glass rounded-md px-3 py-2 text-ink/80"
                 >
-                  ▸ {line}
+                  â–¸ {line}
                 </li>
               ))}
             </ul>
@@ -301,7 +301,7 @@ export default function DeckView() {
           {/* ==================================================== */}
           {/* AUDIENCE                                               */}
           {/* ==================================================== */}
-          <Section title="Who's in the Room" eyebrow="03 · Audience">
+          <Section title="Who's in the Room" eyebrow="03 Â· Audience">
             <p className="text-sm text-ink/60 mb-4">
               Approximate share of the 300+ expected attendees.
             </p>
@@ -336,7 +336,7 @@ export default function DeckView() {
           {/* ==================================================== */}
           {/* TRACKS                                                 */}
           {/* ==================================================== */}
-          <Section title="Conference Tracks" eyebrow="04 · Programme">
+          <Section title="Conference Tracks" eyebrow="04 Â· Programme">
             <ol className="grid sm:grid-cols-2 gap-3">
               {tracks.map((t, i) => (
                 <li
@@ -352,7 +352,7 @@ export default function DeckView() {
             </ol>
           </Section>
 
-          <DeckDivider label="05 · Why Sponsor" />
+          <DeckDivider label="05 Â· Why Sponsor" />
 
           {/* ==================================================== */}
           {/* BENEFITS                                               */}
@@ -368,14 +368,14 @@ export default function DeckView() {
             </div>
           </Section>
 
-          <DeckDivider label="06 · Tiers" />
+          <DeckDivider label="06 Â· Tiers" />
 
           {/* ==================================================== */}
           {/* TIERS                                                  */}
           {/* ==================================================== */}
           <Section title="Sponsorship Tiers" eyebrow="Pick your level">
             <p className="text-xs text-ink/45 mb-5">
-              All amounts are placeholders — replace with your final pricing.
+              All amounts are placeholders â€” replace with your final pricing.
             </p>
             <div className="space-y-4 print:space-y-3">
               {tiers.map((t) => (
@@ -407,7 +407,7 @@ export default function DeckView() {
                   <ul className="relative mt-4 grid sm:grid-cols-2 gap-1.5 text-sm text-ink/80">
                     {t.perks.map((p) => (
                       <li key={p} className="flex gap-2">
-                        <span className="text-neon-glow shrink-0">▸</span>
+                        <span className="text-neon-glow shrink-0">â–¸</span>
                         <span>{p}</span>
                       </li>
                     ))}
@@ -420,22 +420,22 @@ export default function DeckView() {
           {/* ==================================================== */}
           {/* REACH                                                  */}
           {/* ==================================================== */}
-          <Section title="Marketing & Reach" eyebrow="07 · Amplification">
+          <Section title="Marketing & Reach" eyebrow="07 Â· Amplification">
             <p>Sponsors are amplified across:</p>
             <ul className="grid sm:grid-cols-2 gap-2 mt-3 text-sm">
               {[
-                "Website — devopsdays.pk",
+                "Website â€” devopsdays.pk",
                 "LinkedIn pre-event campaign + day-of coverage",
                 "X / Twitter daily reels & spotlights",
                 "Instagram partner takeovers + reels",
-                "Newsletter — pre and post-event editions",
+                "Newsletter â€” pre and post-event editions",
                 "Community partner channels (30+ groups cross-post)",
               ].map((line) => (
                 <li
                   key={line}
                   className="glass rounded-md px-3 py-2 text-ink/80"
                 >
-                  ▸ {line}
+                  â–¸ {line}
                 </li>
               ))}
             </ul>
@@ -449,7 +449,7 @@ export default function DeckView() {
           {/* ==================================================== */}
           {/* HOW TO                                                 */}
           {/* ==================================================== */}
-          <Section title="How to Become a Sponsor" eyebrow="08 · Next steps">
+          <Section title="How to Become a Sponsor" eyebrow="08 Â· Next steps">
             <ol className="space-y-3">
               {[
                 "Reply to this deck indicating your tier of interest.",
@@ -511,10 +511,10 @@ export default function DeckView() {
                 ))}
               </div>
               <div className="mt-12 text-[10px] font-mono uppercase tracking-[0.32em] text-ink/40">
-                Building · Automating · Scaling Pakistan&apos;s Future
+                Building Â· Automating Â· Scaling Pakistan&apos;s Future
               </div>
               <div className="mt-3 text-[10px] font-mono uppercase tracking-[0.2em] text-neon-glow/60">
-                devopsdays.pk · DDP-26
+                devopsdays.pk Â· DDP-26
               </div>
 
               {/* organizers footer strip */}

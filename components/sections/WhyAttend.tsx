@@ -1,4 +1,4 @@
-"use client";
+﻿"use client";
 
 import { motion } from "framer-motion";
 import {
@@ -56,7 +56,7 @@ export default function WhyAttend() {
               <span className="gradient-text">Pakistan&apos;s tech future.</span>
             </>
           }
-          description="From engineers and AI builders to startups, students and community organisers — DevOps Days Pakistan 2026 is the room to be in."
+          description="From engineers and AI builders to startups, students and community organisers â€” DevOps Days Islamabad 2026 is the room to be in."
         />
 
         <div className="mx-auto mt-14 grid max-w-7xl gap-4 sm:grid-cols-2 lg:grid-cols-3">

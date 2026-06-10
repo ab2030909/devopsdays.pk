@@ -1,4 +1,4 @@
-"use client";
+﻿"use client";
 
 import { motion } from "framer-motion";
 import { Cpu, Cloud, BotMessageSquare } from "lucide-react";
@@ -56,7 +56,7 @@ export default function About() {
               transition={{ duration: 0.7, delay: 0.15 }}
               className="mt-6 text-ink/75 text-base sm:text-lg leading-relaxed"
             >
-              DevOps Days Pakistan 2026 is a national community-led conference
+              DevOps Days Islamabad 2026 is a national community-led conference
               focused on DevOps culture, cloud-native systems, platform
               engineering, AI-powered automation, Site Reliability Engineering,
               DevSecOps, and Agentic AI.
@@ -72,7 +72,7 @@ export default function About() {
               Hosted in Islamabad, the conference unites Pakistan&apos;s growing
               ecosystem of engineers, startups, AI builders, cloud
               professionals, developers, and technology communities under one
-              platform — featuring technical sessions, engineering discussions,
+              platform â€” featuring technical sessions, engineering discussions,
               ecosystem collaboration, and modern infrastructure innovation.
             </motion.p>
 
