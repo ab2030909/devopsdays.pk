@@ -70,7 +70,7 @@ export default function Hero() {
             >
               <span className="block gradient-text">DEVOPS DAYS</span>
               <span className="block neon-text text-neon-glow">
-                PAKISTAN <span className="text-white/95">2026</span>
+                ISLAMABAD <span className="text-white/95">2026</span>
               </span>
             </motion.h1>
 
