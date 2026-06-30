@@ -45,7 +45,7 @@ const STACK = [
 
 const LOG_TEMPLATE = [
   { tag: "BUILD", color: "text-emerald-300", msg: "image:devopspk/api@sha256:9a8…  pushed (12.4 MB)" },
-  { tag: "DEPLOY", color: "text-neon-glow", msg: "rolling out v2026.9.26 → 3 replicas ready" },
+  { tag: "DEPLOY", color: "text-neon-glow", msg: "rolling out v2026.9.19 → 3 replicas ready" },
   { tag: "AGENT", color: "text-cyan-300", msg: "agent.scheduler tuned · -32% queue depth" },
   { tag: "OBS", color: "text-amber-300", msg: "p99 latency 187ms → 142ms ✓" },
   { tag: "K8S", color: "text-emerald-300", msg: "cluster prod-isb · 18/18 nodes Ready" },

@@ -198,7 +198,7 @@ export default function DeckView() {
                 <MapPin className="h-4 w-4 text-neon-glow" /> Islamabad, Pakistan
               </span>
               <span className="inline-flex items-center gap-2">
-                <Calendar className="h-4 w-4 text-neon-glow" /> 26 September 2026
+                <Calendar className="h-4 w-4 text-neon-glow" /> 19 September 2026
               </span>
             </motion.div>
 

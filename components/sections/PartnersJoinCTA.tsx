@@ -40,7 +40,12 @@ export default function PartnersJoinCTA() {
             </p>
 
             <div className="mt-8 flex justify-center">
-              <a href="#partner-apply" className="btn-primary group">
+              <a
+                href="https://forms.gle/CbTSbfTYXogW6pp76"
+                target="_blank"
+                rel="noopener noreferrer"
+                className="btn-primary group"
+              >
                 Apply as Community Partner
                 <ArrowRight className="h-4 w-4 transition-transform group-hover:translate-x-0.5" />
               </a>

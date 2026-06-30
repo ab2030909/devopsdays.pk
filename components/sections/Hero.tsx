@@ -87,7 +87,7 @@ export default function Hero() {
               <span className="hidden sm:inline-block w-px h-4 bg-neon/30" />
               <span className="inline-flex items-center gap-2">
                 <Calendar className="h-4 w-4 text-neon-glow" />
-                26 September 2026
+                19 September 2026
               </span>
               <span className="hidden sm:inline-block w-px h-4 bg-neon/30" />
               <span className="hidden sm:inline-block font-mono text-xs uppercase tracking-[0.22em] text-neon-glow/80">
@@ -113,7 +113,7 @@ export default function Hero() {
               </a>
             </motion.div>
 
-            {/* live countdown to Sept 26, 2026 */}
+            {/* live countdown to Sept 19, 2026 */}
             <CountdownTerminal />
           </div>
 

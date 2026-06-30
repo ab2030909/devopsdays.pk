@@ -2,7 +2,7 @@
 
 Pakistan's premier community-led DevOps & Agentic AI conference website.
 
-**Islamabad Â· 26 September 2026**
+**Islamabad Â· 19 September 2026**
 
 > Built with [**Kiro**](https://kiro.dev) â€” an AI-powered IDE for shipping
 > production apps end-to-end through conversation.
@@ -67,7 +67,7 @@ components/
 â”œâ”€â”€ Logo.tsx                      Inline SVG mark
 â”œâ”€â”€ PakistanMap.tsx               Hero artwork wrapper
 â”œâ”€â”€ pakistanPaths.ts              Auto-generated province paths
-â”œâ”€â”€ CountdownTerminal.tsx         Live countdown to 26 Sept 2026
+â”œâ”€â”€ CountdownTerminal.tsx         Live countdown to 19 Sept 2026
 â”œâ”€â”€ InfraVisual.tsx               Animated DevOps "control center"
 â”œâ”€â”€ Particles.tsx                 Linked-dot canvas
 â”œâ”€â”€ GridBackground.tsx
