@@ -2,10 +2,9 @@
 
 Pakistan's premier community-led DevOps & Agentic AI conference website.
 
-**Islamabad Â· 19 September 2026**
+**Islamabad · 19 September 2026**
 
-> Built with [**Kiro**](https://kiro.dev) â€” an AI-powered IDE for shipping
-> production apps end-to-end through conversation.
+
 
 ---
 
