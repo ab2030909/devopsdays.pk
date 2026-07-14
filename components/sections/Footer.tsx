@@ -1,8 +1,9 @@
-﻿"use client";
+"use client";
 
 import { motion } from "framer-motion";
 import { Linkedin, Instagram, Twitter, MessageCircle, Mail } from "lucide-react";
 import Logo from "../Logo";
+import { EVENT_CONFIG } from "@/config/event";
 
 const socials = [
   { icon: Linkedin, href: "#", label: "LinkedIn" },
@@ -20,7 +21,6 @@ const navGroups = [
       { label: "Tracks", href: "#tracks" },
       { label: "Speakers", href: "#speakers" },
       { label: "Venue", href: "#venue" },
-      { label: "FAQ", href: "#faq" },
     ],
   },
   {
@@ -29,7 +29,7 @@ const navGroups = [
       { label: "Become a Sponsor", href: "/sponsors" },
       { label: "Community Partner", href: "/partners" },
       { label: "Apply as Speaker", href: "#speakers" },
-      { label: "Join Waitlist", href: "#waitlist" },
+      { label: "Register Now", href: EVENT_CONFIG.registrationUrl, external: true },
     ],
   },
   {
@@ -37,7 +37,7 @@ const navGroups = [
     links: [
       { label: "Sponsorship Deck", href: "/deck" },
       { label: "Code of Conduct", href: "#" },
-      { label: "Press Kit", href: "#" },
+      { label: "FAQ", href: "#faq" },
       { label: "Contact", href: "mailto:islamabad@devopsdays.org" },
     ],
   },
@@ -63,18 +63,23 @@ export default function Footer() {
             className="text-center max-w-3xl mx-auto"
           >
             <h2 className="font-display text-4xl sm:text-5xl lg:text-6xl font-bold tracking-tight">
-              Building <span className="text-neon-glow">Â·</span> Automating{" "}
-              <span className="text-neon-glow">Â·</span>{" "}
+              Building <span className="text-neon-glow">·</span> Automating{" "}
+              <span className="text-neon-glow">·</span>{" "}
               <span className="gradient-text">Scaling Pakistan&apos;s Future</span>
             </h2>
             <p className="mt-5 text-ink/70">
               Join Pakistan&apos;s national DevOps and Agentic AI movement.
-              Engineers, communities, sponsors and AI builders â€” let&apos;s
+              Engineers, communities, sponsors and AI builders — let&apos;s
               shape the next decade of infrastructure together.
             </p>
             <div className="mt-8 flex flex-wrap justify-center gap-3">
-              <a href="#waitlist" className="btn-primary">
-                Join the Waitlist
+              <a
+                href={EVENT_CONFIG.registrationUrl}
+                target="_blank"
+                rel="noopener noreferrer"
+                className="btn-primary"
+              >
+                Register Now
               </a>
               <a href="/sponsors" className="btn-secondary">
                 Become a Sponsor
@@ -89,13 +94,13 @@ export default function Footer() {
                 <div className="leading-tight">
                   <div className="font-display font-semibold">DevOps Days</div>
                   <div className="text-[10px] font-mono uppercase tracking-[0.22em] text-neon-glow/80">
-                    Pakistan Â· 2026
+                    Islamabad · 2026
                   </div>
                 </div>
               </div>
               <p className="mt-5 text-sm text-ink/60 max-w-sm">
                 Pakistan&apos;s premier community-led DevOps & Agentic AI
-                conference. Islamabad Â· September 2026.
+                conference. Islamabad · September 2026.
               </p>
               <div className="mt-5 flex items-center gap-2">
                 {socials.map((s) => (
@@ -117,16 +122,21 @@ export default function Footer() {
                   {g.title}
                 </div>
                 <ul className="space-y-2.5">
-                  {g.links.map((l) => (
-                    <li key={l.label}>
-                      <a
-                        href={l.href}
-                        className="text-sm text-ink/70 hover:text-ink transition"
-                      >
-                        {l.label}
-                      </a>
-                    </li>
-                  ))}
+                  {g.links.map((l) => {
+                    const isExternal = l.href.startsWith("http") || (l as any).external;
+                    return (
+                      <li key={l.label}>
+                        <a
+                          href={l.href}
+                          target={isExternal ? "_blank" : undefined}
+                          rel={isExternal ? "noopener noreferrer" : undefined}
+                          className="text-sm text-ink/70 hover:text-ink transition"
+                        >
+                          {l.label}
+                        </a>
+                      </li>
+                    );
+                  })}
                 </ul>
               </div>
             ))}
@@ -149,23 +159,11 @@ export default function Footer() {
           <div className="mt-14 divider-glow" />
           <div className="mt-6 flex flex-col sm:flex-row items-center justify-between gap-3 text-xs text-ink/50">
             <div className="font-mono">
-              Â© 2026 DevOps Days Islamabad. All systems nominal.
+              © 2026 DevOps Days Islamabad. All rights reserved.
             </div>
             <div className="font-mono uppercase tracking-[0.2em]">
-              v.2026 Â· build.000 Â· region.isb
+              v.2026 · build.000 · region.isb
             </div>
-          </div>
-          <div className="mt-3 text-[10px] text-ink/35 font-mono text-center sm:text-right">
-            Map data:{" "}
-            <a
-              href="https://github.com/hqakhtar/PakistanMap"
-              target="_blank"
-              rel="noopener noreferrer"
-              className="hover:text-ink/60 underline decoration-dotted"
-            >
-              hqakhtar/PakistanMap
-            </a>{" "}
-            Â· MIT
           </div>
         </div>
       </div>

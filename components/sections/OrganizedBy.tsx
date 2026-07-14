@@ -2,7 +2,7 @@
 
 import Image from "next/image";
 import { motion } from "framer-motion";
-import { Instagram, Linkedin, Globe } from "lucide-react";
+import { Instagram, Linkedin, Globe, Twitter } from "lucide-react";
 
 interface Organizer {
   name: string;
@@ -21,9 +21,9 @@ const organizers: Organizer[] = [
     boost: "high",
     scale: 1,
     links: [
-      { label: "Website", href: "#", icon: Globe },
-      { label: "Instagram", href: "#", icon: Instagram },
-      { label: "LinkedIn", href: "#", icon: Linkedin },
+      { label: "Twitter", href: "https://x.com/CloudIslamabad", icon: Twitter },
+      { label: "Instagram", href: "https://www.instagram.com/cloud_native_islamabad/", icon: Instagram },
+      { label: "LinkedIn", href: "https://www.linkedin.com/company/cloud-native-islamabad/", icon: Linkedin },
     ],
   },
   {
@@ -32,9 +32,9 @@ const organizers: Organizer[] = [
     boost: "none",
     scale: 1,
     links: [
-      { label: "Website", href: "#", icon: Globe },
-      { label: "Instagram", href: "#", icon: Instagram },
-      { label: "LinkedIn", href: "#", icon: Linkedin },
+      { label: "Website", href: "https://cloudnativesecurity.pk/", icon: Globe },
+      { label: "Instagram", href: "https://www.instagram.com/cnspakistan/", icon: Instagram },
+      { label: "LinkedIn", href: "https://www.linkedin.com/company/cloud-native-security-pakistan/", icon: Linkedin },
     ],
   },
 ];
@@ -129,6 +129,8 @@ function OrganizerCard({
             <a
               key={l.label}
               href={l.href}
+              target="_blank"
+              rel="noopener noreferrer"
               aria-label={`${organizer.name} — ${l.label}`}
               className="h-10 w-10 rounded-full glass grid place-items-center text-neon-glow hover:bg-neon/15 hover:shadow-neon transition-all"
             >

@@ -1,4 +1,4 @@
-﻿"use client";
+"use client";
 
 import Image from "next/image";
 import { useEffect, useRef, useState } from "react";
@@ -58,7 +58,7 @@ export default function Venue() {
 
       <div className="container-px">
         <div className="mx-auto max-w-7xl grid lg:grid-cols-2 gap-12 items-center min-w-0">
-          {/* left â€” copy */}
+          {/* left — copy */}
           <div>
             <motion.div
               initial={{ opacity: 0, y: 14 }}
@@ -114,7 +114,7 @@ export default function Venue() {
             </div>
           </div>
 
-          {/* right â€” neon skyline image with motion + filters */}
+          {/* right — neon skyline image with motion + filters */}
           <motion.div
             ref={ref}
             onMouseMove={onMove}
@@ -161,7 +161,7 @@ export default function Venue() {
                 {/* the skyline image */}
                 <Image
                   src="/skyline.webp"
-                  alt="Islamabad skyline â€” Faisal Mosque, Pindi Stadium, Pakistan Monument"
+                  alt="Islamabad skyline — Faisal Mosque, Pindi Stadium, Pakistan Monument"
                   fill
                   priority
                   sizes="(min-width: 1024px) 720px, 100vw"
@@ -258,10 +258,10 @@ export default function Venue() {
                 <span className="absolute inline-flex h-full w-full animate-ping rounded-full bg-emerald-400/60" />
                 <span className="relative inline-flex rounded-full h-2 w-2 bg-emerald-400" />
               </span>
-              33.68Â° N Â· 73.05Â° E
+              33.68° N · 73.05° E
             </div>
             <div className="absolute bottom-3 right-3 glass rounded-md px-2.5 py-1 text-[10px] font-mono uppercase tracking-[0.2em] text-neon-glow z-10">
-              ISB Â· CAPITAL TERRITORY
+              ISB · CAPITAL TERRITORY
             </div>
           </motion.div>
         </div>

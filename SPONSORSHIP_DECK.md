@@ -12,7 +12,7 @@
 Pakistan is at an inflection point.
 
 - **240+ million people**, the world's 5th-most populous country
-- **Over 60% under the age of 30** â€” one of the largest digital-native populations on the planet
+- **Over 60% under the age of 30** — one of the largest digital-native populations on the planet
 - **Software exports crossed $3.2B in FY24** and are projected to keep doubling
 - **300+ active local communities** spanning Cloud-Native, AI, Cybersecurity, MLOps and Platform Engineering
 
@@ -45,8 +45,8 @@ The event will feature:
 
 ### Organized By
 
-- **Cloud Native Islamabad** â€” the city's flagship cloud-native community
-- **Cloud Native Security Pakistan** â€” DevSecOps & cloud-security chapter
+- **Cloud Native Islamabad** — the city's flagship cloud-native community
+- **Cloud Native Security Pakistan** — DevSecOps & cloud-security chapter
 
 ---
 
@@ -56,7 +56,7 @@ The event will feature:
 | ------------------------------- | ---------------- |
 | Expected attendees              | **300+**         |
 | Speakers                        | **10+**          |
-| Community partners              | **30+**          |
+| Community partners              | **50+**          |
 | Conference tracks               | **6**            |
 | Reach across digital channels   | **50,000+**      |
 | Cities represented              | **8+**           |
@@ -83,12 +83,12 @@ The event will feature:
 
 ## 05 Â· Conference Tracks
 
-1. **DevOps & Automation** â€” CI/CD, GitOps, IaC, deployment strategies
-2. **Agentic AI** â€” autonomous agents, multi-agent orchestration, AI workflows
-3. **Cloud & Platform Engineering** â€” IDPs, multi-cloud, abstractions
-4. **DevSecOps** â€” shift-left security, supply-chain hardening, policy as code
-5. **SRE & Observability** â€” SLOs, telemetry, incident response, reliability
-6. **MLOps & AI Infrastructure** â€” model serving, GPU orchestration, vector DBs
+1. **DevOps & Automation** — CI/CD, GitOps, IaC, deployment strategies
+2. **Agentic AI** — autonomous agents, multi-agent orchestration, AI workflows
+3. **Cloud & Platform Engineering** — IDPs, multi-cloud, abstractions
+4. **DevSecOps** — shift-left security, supply-chain hardening, policy as code
+5. **SRE & Observability** — SLOs, telemetry, incident response, reliability
+6. **MLOps & AI Infrastructure** — model serving, GPU orchestration, vector DBs
 
 ---
 
@@ -110,7 +110,7 @@ The event will feature:
 > All amounts are placeholders. Replace with your final pricing if needed.
 > PKR conversions assume 1 USD â‰ˆ 280 PKR.
 
-### ðŸŸª Platinum â€” `USD 2,500` / `â‰ˆ PKR 700,000` *(1 slot)*
+### ðŸŸª Platinum — `USD 2,500` / `â‰ˆ PKR 700,000` *(1 slot)*
 **Title-level visibility. Limited to a single partner.**
 
 - Title sponsor: "DevOps Days Islamabad 2026, presented by [Brand]"
@@ -128,7 +128,7 @@ The event will feature:
 - Recruitment & talent-introduction privileges
 - 8 attendee passes
 
-### ðŸŸ¡ Gold â€” `USD 2,000` / `â‰ˆ PKR 560,000` *(2 slots)*
+### ðŸŸ¡ Gold — `USD 2,000` / `â‰ˆ PKR 560,000` *(2 slots)*
 - 10-minute talk slot on a track stage
 - Logo on the main media wall
 - Dedicated standee at the venue
@@ -141,7 +141,7 @@ The event will feature:
 - Recruitment & talent-introduction privileges
 - 5 attendee passes
 
-### âšª Silver â€” `USD 1,000` / `â‰ˆ PKR 280,000` *(4 slots)*
+### âšª Silver — `USD 1,000` / `â‰ˆ PKR 280,000` *(4 slots)*
 - Logo on the main media wall
 - Dedicated standee at the venue
 - Pre-event and post-event social media posts (dedicated)
@@ -151,7 +151,7 @@ The event will feature:
 - Recruitment & talent-introduction privileges
 - 3 attendee passes
 
-### ðŸŸ« Bronze â€” `USD 500` / `â‰ˆ PKR 140,000`
+### ðŸŸ« Bronze — `USD 500` / `â‰ˆ PKR 140,000`
 - Logo on the main media wall
 - Dedicated standee at the venue
 - Pre-event and post-event social media posts (dedicated)
@@ -160,7 +160,7 @@ The event will feature:
 - Optional swag in attendee bag
 - 2 attendee passes
 
-### ðŸ’§ Ecosystem â€” `USD 250` / `â‰ˆ PKR 70,000`
+### ðŸ’§ Ecosystem — `USD 250` / `â‰ˆ PKR 70,000`
 - Logo on the main media wall
 - Dedicated standee at the venue
 - Pre-event and post-event social media posts (dedicated)
@@ -174,12 +174,12 @@ The event will feature:
 
 Sponsors are amplified across:
 
-- **Website** â€” devopsdays.pk (logo, tier, link)
-- **LinkedIn** â€” pre-event countdown campaign + day-of coverage
-- **X / Twitter** â€” daily reels and thread spotlights
-- **Instagram** â€” partner takeovers + reels
-- **Newsletter** â€” pre and post-event editions to opt-in attendees
-- **Community partner channels** â€” 30+ partner communities cross-post sponsor highlights
+- **Website** — devopsdays.pk (logo, tier, link)
+- **LinkedIn** — pre-event countdown campaign + day-of coverage
+- **X / Twitter** — daily reels and thread spotlights
+- **Instagram** — partner takeovers + reels
+- **Newsletter** — pre and post-event editions to opt-in attendees
+- **Community partner channels** — 50+ partner communities cross-post sponsor highlights
 
 > Estimated total reach across owned + partner channels: **>50,000**
 > tech-aligned impressions in the 6-week campaign window.
@@ -191,8 +191,8 @@ Sponsors are amplified across:
 > Replace with concrete numbers from your previous events / community
 > growth metrics.
 
-- Cloud Native Islamabad â€” XX events delivered, XXXX active members
-- Cloud Native Security Pakistan â€” XX events delivered, XXXX active members
+- Cloud Native Islamabad — XX events delivered, XXXX active members
+- Cloud Native Security Pakistan — XX events delivered, XXXX active members
 - Combined newsletter list: XXXX engineers
 - Combined social reach: XXXX followers across LinkedIn / X / Instagram
 - Past sponsor logos / testimonials *(insert)*

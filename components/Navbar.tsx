@@ -6,6 +6,7 @@ import { usePathname } from "next/navigation";
 import { motion, AnimatePresence } from "framer-motion";
 import { Menu, X } from "lucide-react";
 import Logo from "./Logo";
+import { EVENT_CONFIG } from "@/config/event";
 
 interface NavLink {
   /** when on home page, scroll-to-anchor; otherwise link to home + hash */
@@ -74,7 +75,7 @@ export default function Navbar() {
                 DevOps Days
               </span>
               <span className="text-[10px] font-mono uppercase tracking-[0.22em] text-neon-glow/80">
-                Pakistan · 2026
+                Islamabad · 2026
               </span>
             </div>
           </Link>
@@ -104,12 +105,17 @@ export default function Navbar() {
           </nav>
 
           <div className="hidden md:flex items-center gap-3">
-            <Link href="/deck" className="btn-secondary text-xs">
-              Sponsorship Deck
-            </Link>
-            <Link href="/sponsors" className="btn-primary text-xs">
+            <Link href="/sponsors" className="btn-secondary text-xs">
               Become a Sponsor
             </Link>
+            <a
+              href={EVENT_CONFIG.registrationUrl}
+              target="_blank"
+              rel="noopener noreferrer"
+              className="btn-primary text-xs"
+            >
+              Register Now
+            </a>
           </div>
 
           <button
@@ -149,12 +155,17 @@ export default function Navbar() {
                   );
                 })}
                 <div className="mt-2 grid grid-cols-2 gap-2">
-                  <Link href="/deck" className="btn-secondary text-xs">
-                    Deck
-                  </Link>
-                  <Link href="/sponsors" className="btn-primary text-xs">
+                  <Link href="/sponsors" className="btn-secondary text-xs text-center flex items-center justify-center">
                     Sponsor
                   </Link>
+                  <a
+                    href={EVENT_CONFIG.registrationUrl}
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    className="btn-primary text-xs text-center flex items-center justify-center"
+                  >
+                    Register Now
+                  </a>
                 </div>
               </div>
             </motion.div>

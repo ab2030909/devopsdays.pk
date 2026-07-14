@@ -10,6 +10,7 @@ import GridBackground from "../GridBackground";
 import Particles from "../Particles";
 import PakistanMap from "../PakistanMap";
 import CountdownTerminal from "../CountdownTerminal";
+import { EVENT_CONFIG } from "@/config/event";
 
 export default function Hero() {
   const reduce = useReducedMotion();
@@ -101,15 +102,20 @@ export default function Hero() {
               transition={{ duration: 0.7, delay: 0.5 }}
               className="mt-6 lg:mt-6 flex flex-wrap items-center gap-2 sm:gap-3"
             >
-              <a href="/sponsors" className="btn-primary group">
-                Become a Sponsor
+              <a
+                href={EVENT_CONFIG.registrationUrl}
+                target="_blank"
+                rel="noopener noreferrer"
+                className="btn-primary group"
+              >
+                Register Now
                 <ArrowRight className="h-4 w-4 transition-transform group-hover:translate-x-0.5" />
+              </a>
+              <a href="/sponsors" className="btn-secondary">
+                Become a Sponsor
               </a>
               <a href="/partners" className="btn-secondary">
                 Community Partner
-              </a>
-              <a href="#waitlist" className="btn-secondary">
-                Join Waitlist
               </a>
             </motion.div>
 

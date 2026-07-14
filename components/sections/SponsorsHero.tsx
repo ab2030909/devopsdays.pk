@@ -76,7 +76,7 @@ export default function SponsorsHero() {
             {[
               { v: "300+", l: "Attendees" },
               { v: "10+", l: "Speakers" },
-              { v: "30+", l: "Communities" },
+              { v: "50+", l: "Communities" },
               { v: "6", l: "Tracks" },
             ].map((s) => (
               <div key={s.l} className="glass rounded-xl p-4">

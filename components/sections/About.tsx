@@ -1,4 +1,4 @@
-﻿"use client";
+"use client";
 
 import { motion } from "framer-motion";
 import { Cpu, Cloud, BotMessageSquare } from "lucide-react";
@@ -72,7 +72,7 @@ export default function About() {
               Hosted in Islamabad, the conference unites Pakistan&apos;s growing
               ecosystem of engineers, startups, AI builders, cloud
               professionals, developers, and technology communities under one
-              platform â€” featuring technical sessions, engineering discussions,
+              platform — featuring technical sessions, engineering discussions,
               ecosystem collaboration, and modern infrastructure innovation.
             </motion.p>
 
