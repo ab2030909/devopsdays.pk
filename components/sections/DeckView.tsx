@@ -1,4 +1,4 @@
-﻿"use client";
+"use client";
 
 import Image from "next/image";
 import Link from "next/link";
@@ -86,7 +86,7 @@ const tiers = [
     name: "Silver",
     accent: "from-zinc-200 via-zinc-300 to-zinc-500",
     badge: "bg-zinc-400/20 text-zinc-300",
-    usd: "USD 7,000",
+    usd: "USD 700",
     pkr: "≈ PKR 200,000",
     slots: "4 slots",
     perks: [
