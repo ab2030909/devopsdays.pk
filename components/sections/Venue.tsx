@@ -109,7 +109,7 @@ export default function Venue() {
                   </span>
                 </div>
                 <div className="mt-2 text-sm">Venue To Be Announced</div>
-                <div className="text-xs text-ink/55">September 2026</div>
+                <div className="text-xs text-ink/55">November 2026</div>
               </div>
             </div>
           </div>

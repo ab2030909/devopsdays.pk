@@ -100,7 +100,7 @@ export default function Footer() {
               </div>
               <p className="mt-5 text-sm text-ink/60 max-w-sm">
                 Pakistan&apos;s premier community-led DevOps & Agentic AI
-                conference. Islamabad · September 2026.
+                conference. Islamabad · November 2026.
               </p>
               <div className="mt-5 flex items-center gap-2">
                 {socials.map((s) => (
@@ -152,7 +152,7 @@ export default function Footer() {
                 islamabad@devopsdays.org
               </a>
               <div className="text-sm text-ink/60 mt-2">Islamabad, Pakistan</div>
-              <div className="text-sm text-ink/60">September 2026</div>
+              <div className="text-sm text-ink/60">November 2026</div>
             </div>
           </div>
 

@@ -1,8 +1,8 @@
-﻿# DevOps Days Islamabad 2026
+# DevOps Days Islamabad 2026
 
 Pakistan's premier community-led DevOps & Agentic AI conference website.
 
-**Islamabad · 19 September 2026**
+**Islamabad · November 2026**
 
 
 
@@ -66,7 +66,7 @@ components/
 â”œâ”€â”€ Logo.tsx                      Inline SVG mark
 â”œâ”€â”€ PakistanMap.tsx               Hero artwork wrapper
 â”œâ”€â”€ pakistanPaths.ts              Auto-generated province paths
-â”œâ”€â”€ CountdownTerminal.tsx         Live countdown to 19 Sept 2026
+â”œâ”€â”€ CountdownTerminal.tsx         Live countdown to 21 Nov 2026
 â”œâ”€â”€ InfraVisual.tsx               Animated DevOps "control center"
 â”œâ”€â”€ Particles.tsx                 Linked-dot canvas
 â”œâ”€â”€ GridBackground.tsx

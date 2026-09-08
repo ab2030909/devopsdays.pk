@@ -30,7 +30,7 @@ export const metadata: Metadata = {
     template: "%s | DevOps Days Islamabad 2026",
   },
   description:
-    "Pakistan's premier community-led DevOps, Cloud, Platform Engineering and Agentic AI conference. Islamabad, September 2026.",
+    "Pakistan's premier community-led DevOps, Cloud, Platform Engineering and Agentic AI conference. Islamabad, November 2026.",
   keywords: [
     "DevOps Days Islamabad",
     "DevOps Pakistan 2026",
@@ -46,7 +46,7 @@ export const metadata: Metadata = {
   openGraph: {
     title: "DevOps Days Islamabad 2026",
     description:
-      "Pakistan's premier community-led DevOps & Agentic AI conference. Islamabad, September 2026.",
+      "Pakistan's premier community-led DevOps & Agentic AI conference. Islamabad, November 2026.",
     url: siteUrl,
     siteName: "DevOps Days Islamabad 2026",
     type: "website",
@@ -56,7 +56,7 @@ export const metadata: Metadata = {
     card: "summary_large_image",
     title: "DevOps Days Islamabad 2026",
     description:
-      "Pakistan's premier community-led DevOps & Agentic AI conference. Islamabad, September 2026.",
+      "Pakistan's premier community-led DevOps & Agentic AI conference. Islamabad, November 2026.",
   },
   icons: {
     icon: "/favicon.svg",

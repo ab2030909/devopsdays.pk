@@ -1,9 +1,9 @@
-﻿# DevOps Days Islamabad 2026
+# DevOps Days Islamabad 2026
 ## Sponsorship Deck
 
 **Pakistan's premier community-led DevOps & Agentic AI conference**
 
-ðŸ“ Islamabad Â· ðŸ“… 19 September 2026
+📍 Islamabad · 📅 November 2026
 
 ---
 
