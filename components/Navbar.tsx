@@ -19,11 +19,11 @@ interface NavLink {
 const links: NavLink[] = [
   { hash: "#about", label: "About" },
   { hash: "#tracks", label: "Tracks" },
+  { hash: "#speakers", label: "Speakers" },
   { route: "/sponsors", label: "Sponsors" },
   { route: "/partners", label: "Partners" },
   { route: "/deck", label: "Deck" },
   { hash: "#venue", label: "Venue" },
-  { hash: "#faq", label: "FAQ" },
 ];
 
 function hrefFor(link: NavLink, onHome: boolean): string {

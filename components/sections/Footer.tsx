@@ -28,7 +28,7 @@ const navGroups = [
     links: [
       { label: "Become a Sponsor", href: "/sponsors" },
       { label: "Community Partner", href: "/partners" },
-      { label: "Apply as Speaker", href: "#speakers" },
+      { label: "Apply as Speaker", href: EVENT_CONFIG.speakerApplyUrl, external: true },
       { label: "Register Now", href: EVENT_CONFIG.registrationUrl, external: true },
     ],
   },
