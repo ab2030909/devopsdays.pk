@@ -114,9 +114,11 @@ function SponsorLogoTile({
       className={`group relative flex items-center justify-center px-1.5 hover:scale-105 active:scale-95 transition-transform duration-200 shrink-0 cursor-pointer focus:outline-none ${
         isIcci
           ? "h-11 sm:h-14 w-52 sm:w-64"
-          : isCss || isAdal
-          ? "h-10 sm:h-12 w-36 sm:w-48"
-          : "h-9 sm:h-11 w-28 sm:w-36"
+          : isAdal
+          ? "h-7 sm:h-8 w-24 sm:w-30"
+          : isCss
+          ? "h-9 sm:h-11 w-32 sm:w-42"
+          : "h-8 sm:h-10 w-26 sm:w-34"
       }`}
       title={`${sponsor.name} (${sponsor.tier})`}
     >
