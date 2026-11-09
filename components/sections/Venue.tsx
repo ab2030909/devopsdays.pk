@@ -108,8 +108,8 @@ export default function Venue() {
                     Status
                   </span>
                 </div>
-                <div className="mt-2 text-sm">Venue To Be Announced</div>
-                <div className="text-xs text-ink/55">November 2026</div>
+                <div className="mt-2 text-sm">Islamabad Chamber of Commerce and Industries</div>
+                <div className="text-xs text-ink/55">November 25, 2026</div>
               </div>
             </div>
           </div>

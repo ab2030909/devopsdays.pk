@@ -3,7 +3,7 @@
 
 **Pakistan's premier community-led DevOps & Agentic AI conference**
 
-📍 Islamabad · 📅 November 2026
+📍 Islamabad · 📅 November 25, 2026
 
 ---
 
