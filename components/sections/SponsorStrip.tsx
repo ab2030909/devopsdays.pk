@@ -8,18 +8,17 @@ interface SponsorStripProps {
 }
 
 /**
- * Clean, logo-only auto-scrolling marquee strip of sponsors.
- * No text labels, tiers, or headings.
+ * Compact, full-color logo marquee strip.
  */
 export default function SponsorStrip({ className = "" }: SponsorStripProps) {
-  // Multiply the list so it loops seamlessly on wide screens
+  // Multiply so it loops seamlessly on wide screens
   const half = [...SPONSORS, ...SPONSORS, ...SPONSORS];
   const loop = [...half, ...half];
 
   return (
-    <div className={`relative w-full overflow-hidden py-4 sm:py-5 ${className}`}>
+    <div className={`relative w-full overflow-hidden ${className}`}>
       <div className="relative mask-fade-x overflow-hidden">
-        <div className="flex w-max animate-marquee items-center gap-8 sm:gap-14 hover:[animation-play-state:paused]">
+        <div className="flex w-max animate-marquee items-center gap-6 sm:gap-10 hover:[animation-play-state:paused]">
           {loop.map((s, i) => (
             <SponsorLogoTile key={`${s.name}-${i}`} sponsor={s} />
           ))}
@@ -32,7 +31,7 @@ export default function SponsorStrip({ className = "" }: SponsorStripProps) {
 function SponsorLogoTile({ sponsor }: { sponsor: Sponsor }) {
   const content = (
     <div
-      className="group relative flex items-center justify-center h-12 sm:h-14 w-32 sm:w-44 px-2 opacity-75 hover:opacity-100 transition-all duration-300"
+      className="group relative flex items-center justify-center h-7 sm:h-8 w-24 sm:w-32 px-1 hover:scale-105 transition-transform duration-200"
       title={sponsor.name}
     >
       <div className="relative w-full h-full">
@@ -40,8 +39,8 @@ function SponsorLogoTile({ sponsor }: { sponsor: Sponsor }) {
           src={sponsor.logo}
           alt={sponsor.name}
           fill
-          sizes="(min-width: 640px) 180px, 130px"
-          className="object-contain filter grayscale contrast-125 brightness-125 group-hover:grayscale-0 group-hover:brightness-100 group-hover:drop-shadow-[0_0_12px_rgba(192,132,252,0.65)] group-hover:scale-110 transition-all duration-300"
+          sizes="(min-width: 640px) 130px, 100px"
+          className="object-contain filter drop-shadow-[0_0_6px_rgba(255,255,255,0.15)] group-hover:drop-shadow-[0_0_12px_rgba(192,132,252,0.6)] transition-all duration-200"
         />
       </div>
     </div>

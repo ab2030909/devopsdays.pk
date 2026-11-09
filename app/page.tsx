@@ -16,9 +16,9 @@ export default function Home() {
   return (
     <main className="relative">
       <Navbar />
-      {/* Top logo strip right below the navbar */}
-      <div className="pt-20 sm:pt-24 border-b border-neon/10 bg-black/30 backdrop-blur-sm relative z-20">
-        <SponsorStrip className="py-2.5 sm:py-3" />
+      {/* Sleek, slim top logo strip directly under navbar */}
+      <div className="pt-[72px] sm:pt-[80px] border-b border-neon/10 bg-black/40 backdrop-blur-md relative z-20">
+        <SponsorStrip className="py-1 sm:py-1.5" />
       </div>
       <Hero />
       <OrganizedBy />
