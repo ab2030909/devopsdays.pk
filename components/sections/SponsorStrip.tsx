@@ -115,7 +115,7 @@ function SponsorLogoTile({
         isIcci
           ? "h-11 sm:h-14 w-52 sm:w-64"
           : isAdal
-          ? "h-7 sm:h-8 w-24 sm:w-30"
+          ? "h-8 sm:h-9.5 w-28 sm:w-36"
           : isCss
           ? "h-9 sm:h-11 w-32 sm:w-42"
           : "h-8 sm:h-10 w-26 sm:w-34"
