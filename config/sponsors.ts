@@ -24,6 +24,13 @@ export const SPONSORS: Sponsor[] = [
     tagline: "Official Sponsor",
   },
   {
+    name: "The Computer Science Society",
+    tier: "Supporting Partner",
+    logo: "/sponsors/css.png",
+    href: "https://css-iiu.vercel.app/",
+    tagline: "Official Supporting Partner",
+  },
+  {
     name: "D Notifier",
     tier: "Sponsor",
     logo: "/sponsors/d-notifier.png",
@@ -36,13 +43,6 @@ export const SPONSORS: Sponsor[] = [
     logo: "/sponsors/korneez.png",
     href: "https://korneez.com/",
     tagline: "Official Snack Partner",
-  },
-  {
-    name: "The Computer Science Society",
-    tier: "Supporting Partner",
-    logo: "/sponsors/css.png",
-    href: "https://css-iiu.vercel.app/",
-    tagline: "Official Supporting Partner",
   },
   {
     name: "Computer Hardware Association of Pakistan",
