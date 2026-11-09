@@ -7,7 +7,7 @@ import GridBackground from "../GridBackground";
 
 export default function SponsorsHero() {
   return (
-    <section className="relative isolate overflow-hidden pt-32 pb-16 sm:pt-36 sm:pb-20">
+    <section className="relative isolate overflow-hidden pt-8 pb-12 sm:pt-12 sm:pb-16">
       <div aria-hidden className="absolute inset-0 -z-10">
         <GridBackground />
         <div className="absolute inset-0 bg-radial-glow opacity-90" />
