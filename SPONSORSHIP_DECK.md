@@ -110,7 +110,7 @@ The event will feature:
 > All amounts are placeholders. Replace with your final pricing if needed.
 > PKR conversions assume 1 USD â‰ˆ 280 PKR.
 
-### ðŸŸª Platinum — `USD 2,500` / `â‰ˆ PKR 700,000` *(1 slot)*
+### 🟣 Platinum — `USD 800` / `≈ PKR 225,000` *(1 slot)*
 **Title-level visibility. Limited to a single partner.**
 
 - Title sponsor: "DevOps Days Islamabad 2026, presented by [Brand]"
@@ -126,9 +126,9 @@ The event will feature:
 - Lead capture: full attendee opt-in list
 - Custom activation slot (workshop / hackathon / lounge)
 - Recruitment & talent-introduction privileges
-- 8 attendee passes
+- 12 attendee passes
 
-### ðŸŸ¡ Gold — `USD 2,000` / `â‰ˆ PKR 560,000` *(2 slots)*
+### 🟡 Gold — `USD 600` / `≈ PKR 170,000` *(2 slots)*
 - 10-minute talk slot on a track stage
 - Logo on the main media wall
 - Dedicated standee at the venue
@@ -139,34 +139,25 @@ The event will feature:
 - Newsletter mention
 - Lead capture from opt-in scans
 - Recruitment & talent-introduction privileges
-- 5 attendee passes
+- 10 attendee passes
 
-### âšª Silver — `USD 1,000` / `â‰ˆ PKR 280,000` *(4 slots)*
+### ⚪ Silver — `USD 500` / `≈ PKR 140,000` *(4 slots)*
 - Logo on the main media wall
 - Dedicated standee at the venue
 - Pre-event and post-event social media posts (dedicated)
 - Logo on website + on the official "sponsors" slide
-- 1 dedicated social post
+- 2 dedicated social posts
 - Mention in opening keynote
 - Recruitment & talent-introduction privileges
-- 3 attendee passes
+- 7 attendee passes
 
-### ðŸŸ« Bronze — `USD 500` / `â‰ˆ PKR 140,000`
-- Logo on the main media wall
-- Dedicated standee at the venue
-- Pre-event and post-event social media posts (dedicated)
-- Logo on website
-- Mention in the opening keynote
-- Optional swag in attendee bag
-- 2 attendee passes
-
-### ðŸ’§ Ecosystem — `USD 250` / `â‰ˆ PKR 70,000`
+### 💧 Ecosystem — `USD 250` / `≈ PKR 70,000`
 - Logo on the main media wall
 - Dedicated standee at the venue
 - Pre-event and post-event social media posts (dedicated)
 - Logo on community sponsors page
 - Mention in the opening sponsor reel
-- 1 attendee pass
+- 3 attendee passes
 
 ---
 

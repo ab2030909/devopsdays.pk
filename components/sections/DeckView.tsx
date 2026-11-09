@@ -46,8 +46,8 @@ const tiers = [
     name: "Platinum",
     accent: "from-neon-glow via-neon to-neon-violet",
     badge: "bg-neon-glow/20 text-neon-glow",
-    usd: "USD 1800",
-    pkr: "≈ PKR 500,000",
+    usd: "USD 800",
+    pkr: "≈ PKR 225,000",
     slots: "1 slot",
     exclusive: true,
     perks: [
@@ -68,8 +68,8 @@ const tiers = [
     name: "Gold",
     accent: "from-yellow-200 via-amber-300 to-amber-500",
     badge: "bg-amber-400/20 text-amber-300",
-    usd: "USD 1,100",
-    pkr: "≈ PKR 300,000",
+    usd: "USD 600",
+    pkr: "≈ PKR 170,000",
     slots: "2 slots",
     perks: [
       
@@ -86,8 +86,8 @@ const tiers = [
     name: "Silver",
     accent: "from-zinc-200 via-zinc-300 to-zinc-500",
     badge: "bg-zinc-400/20 text-zinc-300",
-    usd: "USD 700",
-    pkr: "≈ PKR 200,000",
+    usd: "USD 500",
+    pkr: "≈ PKR 140,000",
     slots: "4 slots",
     perks: [
       "Logo on website + sponsors slide",
@@ -95,20 +95,6 @@ const tiers = [
       "Mention in opening keynote",
       "Recruitment & talent-introduction privileges",
       "7 attendee passes",
-    ],
-  },
-  {
-    name: "Bronze",
-    accent: "from-amber-500 via-orange-600 to-rose-700",
-    badge: "bg-orange-500/20 text-orange-300",
-    usd: "USD 500",
-    pkr: "≈ PKR 140,000",
-    perks: [
-      "Logo on website",
-      "Mention in the opening keynote",
-      "Optional swag in attendee bag",
-      "1 dedicated social post",
-      "5 attendee passes",
     ],
   },
   {
