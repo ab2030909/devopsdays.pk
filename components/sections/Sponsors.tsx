@@ -54,7 +54,7 @@ export default function Sponsors() {
             description="We are proud to collaborate with pioneering organizations supporting Pakistan's premier DevOps & Agentic AI conference."
           />
 
-          <div className="mt-12 grid gap-5 sm:grid-cols-2 lg:grid-cols-4">
+          <div className="mt-12 grid gap-5 sm:grid-cols-2 lg:grid-cols-3">
             {SPONSORS.map((s, i) => (
               <SponsorCard key={s.name} sponsor={s} index={i} />
             ))}
