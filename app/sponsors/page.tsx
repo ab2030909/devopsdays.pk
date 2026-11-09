@@ -3,6 +3,7 @@ import Navbar from "@/components/Navbar";
 import Sponsors from "@/components/sections/Sponsors";
 import Footer from "@/components/sections/Footer";
 import SponsorsHero from "@/components/sections/SponsorsHero";
+import SponsorStrip from "@/components/sections/SponsorStrip";
 
 export const metadata: Metadata = {
   title: "Sponsorship",
@@ -15,6 +16,11 @@ export default function SponsorsPage() {
     <main className="relative">
       <Navbar />
       <SponsorsHero />
+      <SponsorStrip
+        eyebrow="Confirmed Sponsors"
+        title="Backed By Leading Tech Organizations"
+        className="border-y border-neon/15 bg-black/20"
+      />
       <Sponsors />
       <Footer />
     </main>

@@ -1,6 +1,7 @@
 import Navbar from "@/components/Navbar";
 import Hero from "@/components/sections/Hero";
 import OrganizedBy from "@/components/sections/OrganizedBy";
+import SponsorStrip from "@/components/sections/SponsorStrip";
 import Stats from "@/components/sections/Stats";
 import About from "@/components/sections/About";
 import Tracks from "@/components/sections/Tracks";
@@ -17,6 +18,7 @@ export default function Home() {
       <Navbar />
       <Hero />
       <OrganizedBy />
+      <SponsorStrip />
       <Stats />
       <About />
       <Tracks />

@@ -83,7 +83,7 @@ export default function Hero() {
             >
               <span className="inline-flex items-center gap-2">
                 <MapPin className="h-4 w-4 text-neon-glow" />
-                Islamabad, Pakistan
+                ICCI G-8, Islamabad, Pakistan
               </span>
               <span className="hidden sm:inline-block w-px h-4 bg-neon/30" />
               <span className="inline-flex items-center gap-2">

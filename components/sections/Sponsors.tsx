@@ -1,5 +1,6 @@
 "use client";
 
+import Image from "next/image";
 import { motion } from "framer-motion";
 import {
   Eye,
@@ -10,8 +11,10 @@ import {
   Sparkles,
   Download,
   ArrowRight,
+  ExternalLink,
 } from "lucide-react";
 import SectionHeader from "../SectionHeader";
+import { SPONSORS, type Sponsor } from "@/config/sponsors";
 
 const benefits = [
   { icon: Eye, title: "Brand Visibility", desc: "On-stage, on-site, on-air, and across digital." },
@@ -39,6 +42,25 @@ export default function Sponsors() {
         <div className="absolute -top-20 right-0 h-72 w-72 bg-neon/15 blur-[120px] rounded-full" />
       </div>
       <div className="container-px">
+        {/* Confirmed Sponsors Showcase */}
+        <div className="mx-auto max-w-7xl mb-24">
+          <SectionHeader
+            eyebrow="Backed By The Best"
+            title={
+              <>
+                Our <span className="gradient-text">sponsors & partners.</span>
+              </>
+            }
+            description="We are proud to collaborate with pioneering organizations supporting Pakistan's premier DevOps & Agentic AI conference."
+          />
+
+          <div className="mt-12 grid gap-5 sm:grid-cols-2 lg:grid-cols-4">
+            {SPONSORS.map((s, i) => (
+              <SponsorCard key={s.name} sponsor={s} index={i} />
+            ))}
+          </div>
+        </div>
+
         <SectionHeader
           eyebrow="What We Offer"
           title={
@@ -140,4 +162,73 @@ export default function Sponsors() {
       </div>
     </section>
   );
+}
+
+function SponsorCard({ sponsor, index }: { sponsor: Sponsor; index: number }) {
+  const card = (
+    <motion.div
+      initial={{ opacity: 0, y: 22 }}
+      whileInView={{ opacity: 1, y: 0 }}
+      viewport={{ once: true }}
+      transition={{ duration: 0.5, delay: index * 0.08 }}
+      whileHover={{ y: -5 }}
+      className="group relative h-full flex flex-col justify-between rounded-2xl glass-strong border border-neon/20 p-6 overflow-hidden transition-all hover:border-neon/50 hover:shadow-neon"
+    >
+      <div className="pointer-events-none absolute -top-16 -right-16 h-40 w-40 rounded-full blur-3xl opacity-20 group-hover:opacity-50 transition-opacity bg-gradient-to-br from-neon-glow via-neon to-neon-violet" />
+      <div className="pointer-events-none absolute inset-x-6 top-0 h-px bg-gradient-to-r from-transparent via-neon-glow/50 to-transparent" />
+
+      {/* Top tier badge */}
+      <div className="flex items-center justify-between gap-2 mb-6">
+        <span className="inline-flex items-center gap-1.5 px-2.5 py-1 rounded-full text-[10px] font-mono uppercase tracking-[0.18em] bg-neon/10 border border-neon/25 text-neon-glow">
+          {sponsor.tier}
+        </span>
+        {sponsor.href && (
+          <span className="text-ink/40 group-hover:text-neon-glow transition-colors">
+            <ExternalLink className="h-3.5 w-3.5" />
+          </span>
+        )}
+      </div>
+
+      {/* Logo container */}
+      <div className="relative h-24 sm:h-28 w-full flex items-center justify-center p-3 rounded-xl glass border border-neon/10 overflow-hidden group-hover:border-neon/30 transition-colors">
+        <div className="absolute inset-0 grid-bg opacity-15" />
+        <div className="relative w-full h-full flex items-center justify-center">
+          <Image
+            src={sponsor.logo}
+            alt={sponsor.name}
+            fill
+            sizes="(min-width: 1024px) 240px, (min-width: 640px) 200px, 160px"
+            className="object-contain filter drop-shadow-[0_0_10px_rgba(192,132,252,0.35)] group-hover:drop-shadow-[0_0_18px_rgba(192,132,252,0.65)] group-hover:scale-105 transition-all duration-300"
+          />
+        </div>
+      </div>
+
+      {/* Sponsor info */}
+      <div className="mt-5 text-center">
+        <h3 className="font-display text-base font-semibold tracking-tight text-ink/95 group-hover:text-white transition-colors">
+          {sponsor.name}
+        </h3>
+        {sponsor.tagline && (
+          <p className="mt-1 text-xs text-ink/55 truncate">
+            {sponsor.tagline}
+          </p>
+        )}
+      </div>
+    </motion.div>
+  );
+
+  if (sponsor.href) {
+    return (
+      <a
+        href={sponsor.href}
+        target="_blank"
+        rel="noopener noreferrer"
+        className="block focus:outline-none focus:ring-2 focus:ring-neon/40 rounded-2xl"
+      >
+        {card}
+      </a>
+    );
+  }
+
+  return card;
 }
