@@ -151,7 +151,15 @@ export default function Footer() {
               >
                 islamabad@devopsdays.org
               </a>
-              <div className="text-sm text-ink/60 mt-2">Islamabad, Pakistan</div>
+              <a
+                href="https://www.google.com/maps/search/?api=1&query=Islamabad+Chamber+of+Commerce+and+Industry%2C+Chamber+House%2C+Aiwan-e-Sanat-o-Tijarat+Road%2C+G-8%2F1%2C+Islamabad"
+                target="_blank"
+                rel="noopener noreferrer"
+                className="text-sm text-ink/60 hover:text-ink transition block mt-2"
+              >
+                Chamber House, Aiwan-e-Sanat-o-Tijarat Road, Mauve Area, G-8/1,
+                Islamabad, Pakistan
+              </a>
               <div className="text-sm text-ink/60">November 25, 2026</div>
             </div>
           </div>
