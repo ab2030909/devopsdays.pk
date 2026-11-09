@@ -15,12 +15,10 @@ export default function SponsorsPage() {
   return (
     <main className="relative">
       <Navbar />
+      <div className="pt-20 sm:pt-24 border-b border-neon/10 bg-black/30 backdrop-blur-sm relative z-20">
+        <SponsorStrip className="py-2.5 sm:py-3" />
+      </div>
       <SponsorsHero />
-      <SponsorStrip
-        eyebrow="Confirmed Sponsors"
-        title="Backed By Leading Tech Organizations"
-        className="border-y border-neon/15 bg-black/20"
-      />
       <Sponsors />
       <Footer />
     </main>

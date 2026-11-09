@@ -27,7 +27,7 @@ export default function Hero() {
   return (
     <section
       id="top"
-      className="relative isolate min-h-[100svh] overflow-hidden pt-24 sm:pt-28 lg:pt-24 pb-10 sm:pb-12"
+      className="relative isolate min-h-[calc(100svh-5rem)] overflow-hidden pt-12 sm:pt-16 lg:pt-14 pb-10 sm:pb-12"
     >
       {/* layered backgrounds */}
       <div aria-hidden className="absolute inset-0 -z-10">
