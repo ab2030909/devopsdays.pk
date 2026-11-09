@@ -106,19 +106,25 @@ function SponsorLogoTile({
   const isIcci = sponsor.name.toLowerCase().includes("islamabad chamber") || sponsor.logo.includes("icci");
   const isCss = sponsor.logo.includes("css");
   const isAdal = sponsor.logo.includes("adal");
+  const isChap = sponsor.logo.includes("chap");
+  const isKorneez = sponsor.logo.includes("korneez");
 
   return (
     <button
       type="button"
       onClick={onSelect}
-      className={`group relative flex items-center justify-center px-1.5 hover:scale-105 active:scale-95 transition-transform duration-200 shrink-0 cursor-pointer focus:outline-none ${
+      className={`group relative flex items-center justify-center px-2 hover:scale-105 active:scale-95 transition-transform duration-200 shrink-0 cursor-pointer focus:outline-none ${
         isIcci
           ? "h-11 sm:h-14 w-52 sm:w-64"
-          : isAdal
-          ? "h-8 sm:h-9.5 w-28 sm:w-36"
+          : isChap
+          ? "h-10 sm:h-12 w-32 sm:w-40"
           : isCss
           ? "h-9 sm:h-11 w-32 sm:w-42"
-          : "h-8 sm:h-10 w-26 sm:w-34"
+          : isKorneez
+          ? "h-9 sm:h-11 w-28 sm:w-36"
+          : isAdal
+          ? "h-8 sm:h-9.5 w-28 sm:w-36"
+          : "h-8 sm:h-10 w-28 sm:w-36"
       }`}
       title={`${sponsor.name} (${sponsor.tier})`}
     >
