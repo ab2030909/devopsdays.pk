@@ -29,9 +29,15 @@ export default function SponsorStrip({ className = "" }: SponsorStripProps) {
 }
 
 function SponsorLogoTile({ sponsor }: { sponsor: Sponsor }) {
+  const isIcci = sponsor.name.toLowerCase().includes("islamabad chamber") || sponsor.logo.includes("icci");
+
   const content = (
     <div
-      className="group relative flex items-center justify-center h-7 sm:h-8 w-24 sm:w-32 px-1 hover:scale-105 transition-transform duration-200"
+      className={`group relative flex items-center justify-center px-1 hover:scale-105 transition-transform duration-200 ${
+        isIcci
+          ? "h-9 sm:h-11 w-44 sm:w-56"
+          : "h-7 sm:h-8 w-24 sm:w-32"
+      }`}
       title={sponsor.name}
     >
       <div className="relative w-full h-full">
@@ -39,7 +45,7 @@ function SponsorLogoTile({ sponsor }: { sponsor: Sponsor }) {
           src={sponsor.logo}
           alt={sponsor.name}
           fill
-          sizes="(min-width: 640px) 130px, 100px"
+          sizes={isIcci ? "(min-width: 640px) 230px, 180px" : "(min-width: 640px) 130px, 100px"}
           className="object-contain filter drop-shadow-[0_0_6px_rgba(255,255,255,0.15)] group-hover:drop-shadow-[0_0_12px_rgba(192,132,252,0.6)] transition-all duration-200"
         />
       </div>
