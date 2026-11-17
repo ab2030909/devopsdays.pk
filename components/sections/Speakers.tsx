@@ -51,7 +51,7 @@ const speakers: Speaker[] = [
 ];
 
 // number of "coming soon" placeholder cards shown after confirmed speakers
-const PLACEHOLDERS = 0;
+const PLACEHOLDERS = 3;
 
 export default function Speakers() {
   const [active, setActive] = useState<Speaker | null>(null);
@@ -147,7 +147,7 @@ export default function Speakers() {
               <div className="mt-4 flex items-center justify-between">
                 <div>
                   <div className="text-sm font-semibold">Speaker {speakers.length + i + 1}</div>
-                  <div className="text-xs text-ink/50">To be announced</div>
+                  <div className="text-xs text-ink/50">To be confirmed</div>
                 </div>
                 <span className="chip text-[10px]">2026</span>
               </div>
