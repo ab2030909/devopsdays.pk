@@ -4,7 +4,6 @@ import { useState, useEffect } from "react";
 import { motion, AnimatePresence } from "framer-motion";
 import { Mic, ArrowRight, X, Linkedin } from "lucide-react";
 import SectionHeader from "../SectionHeader";
-import { EVENT_CONFIG } from "@/config/event";
 
 type Speaker = {
   name: string;
@@ -155,17 +154,6 @@ export default function Speakers() {
           ))}
         </div>
 
-        <div className="mt-12 flex justify-center">
-          <a
-            href={EVENT_CONFIG.speakerApplyUrl}
-            target="_blank"
-            rel="noopener noreferrer"
-            className="btn-primary group"
-          >
-            Apply as Speaker
-            <ArrowRight className="h-4 w-4 transition-transform group-hover:translate-x-0.5" />
-          </a>
-        </div>
       </div>
 
       {/* ===== Speaker detail popup ===== */}

@@ -1,7 +1,7 @@
 "use client";
 
 import { motion } from "framer-motion";
-import { ArrowRight, Users } from "lucide-react";
+import { Users } from "lucide-react";
 
 export default function PartnersJoinCTA() {
   return (
@@ -39,17 +39,6 @@ export default function PartnersJoinCTA() {
               Pakistan&apos;s biggest DevOps & Agentic AI gathering.
             </p>
 
-            <div className="mt-8 flex justify-center">
-              <a
-                href="https://forms.gle/CbTSbfTYXogW6pp76"
-                target="_blank"
-                rel="noopener noreferrer"
-                className="btn-primary group"
-              >
-                Apply as Community Partner
-                <ArrowRight className="h-4 w-4 transition-transform group-hover:translate-x-0.5" />
-              </a>
-            </div>
           </div>
         </motion.div>
       </div>
