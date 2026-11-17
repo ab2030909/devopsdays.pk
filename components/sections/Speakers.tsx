@@ -26,10 +26,32 @@ const speakers: Speaker[] = [
     ],
     linkedin: "https://www.linkedin.com/in/babarzahoordevops/",
   },
+  {
+    name: "Hamza Qureshi",
+    photo: "/speakers/hamza-qureshi.png",
+    topic: "Hands-on AI Development with Agentic Frameworks",
+    bio: [
+      "Get ready for an insightful and practical session exploring the power of Agentic AI and modern AI development.",
+      "Discover how agentic frameworks are transforming AI development, enabling developers to build intelligent, autonomous systems and move beyond traditional AI applications. This session will offer practical insights into building with agentic technologies and exploring their real-world potential.",
+    ],
+    linkedin: "https://www.linkedin.com/in/hamza-qureshi-87a85955/",
+  },
+  {
+    name: "Zunaira Shafaq",
+    photo: "/speakers/zunaira-shafaq.png",
+    topic:
+      "Introducing AI-Powered Cloud Cost Management with FinOps Agent",
+    bio: [
+      "Bringing hands-on industry experience and expertise in DevOps and cloud technologies, Zunaira is a Senior DevOps Engineer at OpenSpace and an AWS Community Builder.",
+      "Cloud costs are growing, and managing them intelligently is becoming more important than ever.",
+      "In this session, explore how AI-powered FinOps agents can transform cloud cost management through intelligent insights, automation, and smarter resource optimization. Discover how AI can help teams make cost-efficient cloud decisions while maintaining performance and scalability.",
+    ],
+    linkedin: "https://www.linkedin.com/in/zunairashafaq/",
+  },
 ];
 
 // number of "coming soon" placeholder cards shown after confirmed speakers
-const PLACEHOLDERS = 2;
+const PLACEHOLDERS = 0;
 
 export default function Speakers() {
   const [active, setActive] = useState<Speaker | null>(null);
