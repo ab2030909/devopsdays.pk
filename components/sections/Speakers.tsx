@@ -57,6 +57,7 @@ const speakers: Speaker[] = [
       "With extensive experience working with senior government officials, corporate executives, and regulatory institutions, she brings valuable insights into AI governance frameworks, risk management, human oversight, and responsible AI adoption. She also serves as District Chair for Artificial Intelligence & Innovation at Rotary International District 3271, championing responsible and inclusive AI innovation.",
       "In this session, explore how intelligent automation, AI accountability, and responsible governance can transform the future of IT infrastructure and shape the next generation of intelligent technology.",
     ],
+    linkedin: "https://www.linkedin.com/in/ammaraaftab/",
   },
 ];
 
