@@ -48,7 +48,7 @@ const speakers: Speaker[] = [
     linkedin: "https://www.linkedin.com/in/zunairashafaq/",
   },
   {
-    name: "Dr. Ammara Aftab (Hon.)",
+    name: "Dr. Ammara Aftab",
     photo: "/speakers/ammara-aftab.png",
     topic:
       "AIOps & AI Governance: Shaping the Next Generation of Intelligent IT",
