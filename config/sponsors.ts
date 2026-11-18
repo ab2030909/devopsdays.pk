@@ -51,4 +51,16 @@ export const SPONSORS: Sponsor[] = [
     href: "https://www.linkedin.com/company/computer-hardware-association-of-pakistan/",
     tagline: "Official Ecosystem Partner",
   },
+  {
+    name: "Intag Laptop Stores",
+    tier: "Sponsor",
+    logo: "/sponsors/intag.png",
+    tagline: "Official Sponsor",
+  },
+  {
+    name: "Vincio",
+    tier: "Ecosystem Partner",
+    logo: "/sponsors/vincio.png",
+    tagline: "Official Ecosystem Partner",
+  },
 ];
