@@ -47,10 +47,21 @@ const speakers: Speaker[] = [
     ],
     linkedin: "https://www.linkedin.com/in/zunairashafaq/",
   },
+  {
+    name: "Dr. Ammara Aftab (Hon.)",
+    photo: "/speakers/ammara-aftab.png",
+    topic:
+      "AIOps & AI Governance: Shaping the Next Generation of Intelligent IT",
+    bio: [
+      "Global AI Speaker, AI Governance Strategist, Consultant, and Founder & Chairperson of Pro AI Global. Recognized as Pakistan's first female AI professional with four international recognitions, Dr. Ammara is a leading voice in responsible AI, AI governance, digital transformation, and strategic AI leadership.",
+      "With extensive experience working with senior government officials, corporate executives, and regulatory institutions, she brings valuable insights into AI governance frameworks, risk management, human oversight, and responsible AI adoption. She also serves as District Chair for Artificial Intelligence & Innovation at Rotary International District 3271, championing responsible and inclusive AI innovation.",
+      "In this session, explore how intelligent automation, AI accountability, and responsible governance can transform the future of IT infrastructure and shape the next generation of intelligent technology.",
+    ],
+  },
 ];
 
 // number of "coming soon" placeholder cards shown after confirmed speakers
-const PLACEHOLDERS = 3;
+const PLACEHOLDERS = 2;
 
 export default function Speakers() {
   const [active, setActive] = useState<Speaker | null>(null);
