@@ -267,7 +267,7 @@ export default function Speakers() {
           />
 
           {/* Moderator */}
-          <div className="mx-auto mt-14 max-w-md">
+          <div className="mx-auto mt-14 max-w-[260px] sm:max-w-xs">
             <motion.button
               type="button"
               onClick={() => setActive(panelModerator)}

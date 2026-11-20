@@ -25,10 +25,10 @@ export default function Home() {
       <Stats />
       <About />
       <Tracks />
+      <Speakers />
       <CommunityStrip />
       <Venue />
       <WhyAttend />
-      <Speakers />
       <FAQ />
       <Footer />
     </main>
