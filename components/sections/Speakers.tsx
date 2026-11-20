@@ -8,10 +8,26 @@ import SectionHeader from "../SectionHeader";
 type Speaker = {
   name: string;
   photo: string;
-  topic: string;
-  bio: string[];
+  topic?: string;
+  bio?: string[];
   linkedin?: string;
+  label?: string; // card/popup tag, e.g. "confirmed speaker" or "moderator"
 };
+
+// Panel talk
+const panelModerator: Speaker = {
+  name: "Shah Murad Ali",
+  photo: "/panelists/shah-murad-ali.png",
+  bio: [],
+  label: "moderator",
+};
+
+const panelists: Speaker[] = [
+  { name: "Arham Aamir", photo: "/panelists/arham-aamir.png", bio: [], label: "panelist" },
+  { name: "Jahanzeb Arshad", photo: "/panelists/jahanzeb-arshad.png", bio: [], label: "panelist" },
+  { name: "Uzma Bibi", photo: "/panelists/uzma-bibi.png", bio: [], label: "panelist" },
+  { name: "Faisal Rehman", photo: "/panelists/faisal-rehman.png", bio: [], label: "panelist" },
+];
 
 const speakers: Speaker[] = [
   {
@@ -189,6 +205,99 @@ export default function Speakers() {
           ))}
         </div>
 
+        {/* ===== Panel Talk ===== */}
+        <div className="mx-auto mt-24 max-w-7xl">
+          <SectionHeader
+            eyebrow="Panel Talk"
+            title={
+              <>
+                Beyond Prompts:{" "}
+                <span className="gradient-text">
+                  the evolution of IT in the era of AI.
+                </span>
+              </>
+            }
+            description="A moderated panel bringing together industry voices to explore how AI is reshaping information technology, engineering practices and the future of the field."
+          />
+
+          {/* Moderator */}
+          <div className="mx-auto mt-14 max-w-md">
+            <motion.button
+              type="button"
+              onClick={() => setActive(panelModerator)}
+              initial={{ opacity: 0, y: 24 }}
+              whileInView={{ opacity: 1, y: 0 }}
+              viewport={{ once: true, margin: "-40px" }}
+              transition={{ duration: 0.6 }}
+              className="group relative w-full glass rounded-2xl p-5 overflow-hidden ring-1 ring-neon/40 hover:shadow-neon transition-all text-left"
+            >
+              <div className="absolute inset-0 bg-gradient-to-br from-neon/5 via-transparent to-transparent opacity-0 group-hover:opacity-100 transition" />
+              <div className="aspect-square w-full rounded-xl border border-neon/30 bg-neon/[0.04] relative overflow-hidden">
+                {/* eslint-disable-next-line @next/next/no-img-element */}
+                <img
+                  src={panelModerator.photo}
+                  alt={panelModerator.name}
+                  className="h-full w-full object-cover object-top transition-transform duration-500 group-hover:scale-105"
+                />
+                <div className="absolute inset-0 bg-gradient-to-t from-background/80 via-transparent to-transparent" />
+                <span className="absolute bottom-3 left-3 text-[10px] font-mono uppercase tracking-[0.2em] text-neon-glow">
+                  moderator
+                </span>
+              </div>
+              <div className="mt-4 flex items-center justify-between gap-3">
+                <div>
+                  <div className="text-sm font-semibold">{panelModerator.name}</div>
+                  <div className="text-xs text-ink/55">Panel Moderator</div>
+                </div>
+                <span className="shrink-0 inline-flex items-center gap-1 text-[11px] font-medium text-neon-glow">
+                  View
+                  <ArrowRight className="h-3.5 w-3.5 transition-transform group-hover:translate-x-0.5" />
+                </span>
+              </div>
+            </motion.button>
+          </div>
+
+          {/* Panelists */}
+          <div className="mt-6 grid gap-4 sm:grid-cols-2 lg:grid-cols-4">
+            {panelists.map((p, i) => (
+              <motion.button
+                key={p.name}
+                type="button"
+                onClick={() => setActive(p)}
+                initial={{ opacity: 0, y: 24 }}
+                whileInView={{ opacity: 1, y: 0 }}
+                viewport={{ once: true, margin: "-40px" }}
+                transition={{ duration: 0.6, delay: i * 0.06 }}
+                className="group relative glass rounded-2xl p-5 overflow-hidden hover:shadow-neon transition-all text-left"
+              >
+                <div className="absolute inset-0 bg-gradient-to-br from-neon/5 via-transparent to-transparent opacity-0 group-hover:opacity-100 transition" />
+                <div className="aspect-square w-full rounded-xl border border-neon/30 bg-neon/[0.04] relative overflow-hidden">
+                  {/* eslint-disable-next-line @next/next/no-img-element */}
+                  <img
+                    src={p.photo}
+                    alt={p.name}
+                    className="h-full w-full object-cover object-top transition-transform duration-500 group-hover:scale-105"
+                  />
+                  <div className="absolute inset-0 bg-gradient-to-t from-background/80 via-transparent to-transparent" />
+                  <span className="absolute bottom-3 left-3 text-[10px] font-mono uppercase tracking-[0.2em] text-neon-glow">
+                    panelist
+                  </span>
+                </div>
+                <div className="mt-4 flex items-center justify-between gap-3">
+                  <div>
+                    <div className="text-sm font-semibold">{p.name}</div>
+                    <div className="text-xs text-ink/55">Panelist</div>
+                  </div>
+                  <span className="shrink-0 inline-flex items-center gap-1 text-[11px] font-medium text-neon-glow">
+                    View
+                    <ArrowRight className="h-3.5 w-3.5 transition-transform group-hover:translate-x-0.5" />
+                  </span>
+                </div>
+              </motion.button>
+            ))}
+          </div>
+        </div>
+
       </div>
 
       {/* ===== Speaker detail popup ===== */}
@@ -236,27 +345,35 @@ export default function Speakers() {
 
                 <div className="p-6 sm:p-7">
                   <span className="text-[10px] font-mono uppercase tracking-[0.2em] text-neon-glow">
-                    confirmed speaker
+                    {active.label ?? "confirmed speaker"}
                   </span>
                   <h3 className="mt-2 font-display text-2xl font-bold">
                     {active.name}
                   </h3>
-                  <div className="mt-3 rounded-lg border border-neon/20 bg-neon/[0.06] px-3 py-2">
-                    <div className="text-[10px] font-mono uppercase tracking-[0.18em] text-ink/50">
-                      Session Topic
+                  {active.topic && (
+                    <div className="mt-3 rounded-lg border border-neon/20 bg-neon/[0.06] px-3 py-2">
+                      <div className="text-[10px] font-mono uppercase tracking-[0.18em] text-ink/50">
+                        Session Topic
+                      </div>
+                      <div className="mt-1 text-sm font-semibold text-neon-glow leading-snug">
+                        {active.topic}
+                      </div>
                     </div>
-                    <div className="mt-1 text-sm font-semibold text-neon-glow leading-snug">
-                      {active.topic}
-                    </div>
-                  </div>
+                  )}
 
-                  <div className="mt-4 space-y-3">
-                    {active.bio.map((p, idx) => (
-                      <p key={idx} className="text-sm text-ink/70 leading-relaxed">
-                        {p}
-                      </p>
-                    ))}
-                  </div>
+                  {active.bio && active.bio.length > 0 ? (
+                    <div className="mt-4 space-y-3">
+                      {active.bio.map((p, idx) => (
+                        <p key={idx} className="text-sm text-ink/70 leading-relaxed">
+                          {p}
+                        </p>
+                      ))}
+                    </div>
+                  ) : (
+                    <p className="mt-4 text-sm text-ink/50 italic">
+                      Full bio coming soon.
+                    </p>
+                  )}
 
                   {active.linkedin && (
                     <a
