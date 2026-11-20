@@ -71,10 +71,21 @@ const speakers: Speaker[] = [
     ],
     linkedin: "https://www.linkedin.com/in/mansoor0x01/",
   },
+  {
+    name: "Abdullah Haroon",
+    photo: "/speakers/abdullah-haroon.png",
+    topic:
+      "From Concept to Commercial: Engineering AI-Powered Product Videos with AdaL",
+    bio: [
+      "Abdullah is an AI Engineer, Project Manager, and Tech Community Builder passionate about building AI-powered solutions and creating opportunities for developers to learn, collaborate, and innovate.",
+      "As an active community organizer with Cloud Native Islamabad, he has been involved in building developer communities, organizing technical workshops, hackathons, and conferences, while exploring practical applications of emerging AI technologies.",
+      "In this hands-on workshop, Abdullah will explore how Generative AI is transforming product storytelling, helping startups and businesses turn product concepts into engaging, AI-generated commercial videos. Discover how tools like AdaL are opening new possibilities for product visualization, creative workflows, and AI-powered marketing.",
+    ],
+  },
 ];
 
 // number of "coming soon" placeholder cards shown after confirmed speakers
-const PLACEHOLDERS = 1;
+const PLACEHOLDERS = 0;
 
 export default function Speakers() {
   const [active, setActive] = useState<Speaker | null>(null);
