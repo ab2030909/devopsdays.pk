@@ -141,6 +141,7 @@ const speakers: Speaker[] = [
       "As an active community organizer with Cloud Native Islamabad, he has been involved in building developer communities, organizing technical workshops, hackathons, and conferences, while exploring practical applications of emerging AI technologies.",
       "In this hands-on workshop, Abdullah will explore how Generative AI is transforming product storytelling, helping startups and businesses turn product concepts into engaging, AI-generated commercial videos. Discover how tools like AdaL are opening new possibilities for product visualization, creative workflows, and AI-powered marketing.",
     ],
+    linkedin: "https://www.linkedin.com/in/muhammad-abdullah-haroon-b49478271/",
   },
 ];
 
