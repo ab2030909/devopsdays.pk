@@ -59,10 +59,22 @@ const speakers: Speaker[] = [
     ],
     linkedin: "https://www.linkedin.com/in/ammaraaftab/",
   },
+  {
+    name: "Mansoor Amjad",
+    photo: "/speakers/mansoor-amjad.png",
+    topic:
+      "Offensive Security Meets AI SecOps: Weaponizing AI for Modern Red Teaming and Penetration Testing",
+    bio: [
+      "Mansoor is a VAPT Consultant at Systems Limited, an OSCP-certified Penetration Tester, and a Top Rated Plus Security Freelancer on Upwork.",
+      "With hands-on experience in offensive security, he helps organizations strengthen their security posture by identifying and addressing critical vulnerabilities across web applications, APIs, networks, and cloud infrastructure before attackers can exploit them.",
+      "Discover how AI is transforming offensive security, empowering modern red teams, and reshaping the way penetration testing is performed.",
+    ],
+    linkedin: "https://www.linkedin.com/in/mansoor0x01/",
+  },
 ];
 
 // number of "coming soon" placeholder cards shown after confirmed speakers
-const PLACEHOLDERS = 2;
+const PLACEHOLDERS = 1;
 
 export default function Speakers() {
   const [active, setActive] = useState<Speaker | null>(null);
