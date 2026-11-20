@@ -53,8 +53,6 @@ const panelists: Speaker[] = [
     name: "Uzma Bibi",
     photo: "/panelists/uzma-bibi.png",
     label: "panelist",
-    topic:
-      "DevOps & Platform Engineer | Google Innovator | AWS Certified Solutions Architect | Kubernetes & GitOps Specialist",
     bio: [
       "Uzma Bibi is a DevOps and Platform Engineer specializing in designing, building, and managing resilient, scalable, and secure cloud infrastructure. With expertise across AWS, Azure, and Google Cloud Platform (GCP), she focuses on transforming complex infrastructure into reliable, automated, and manageable systems.",
       "Her technical expertise spans Kubernetes, Docker, Terraform, CloudFormation, Ansible, and GitOps, alongside building CI/CD pipelines using Jenkins, GitHub Actions, GitLab CI/CD, and ArgoCD. She also works with monitoring and observability tools such as Prometheus, Grafana, Datadog, and ELK Stack to improve infrastructure reliability and operational visibility.",
