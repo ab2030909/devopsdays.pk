@@ -18,15 +18,61 @@ type Speaker = {
 const panelModerator: Speaker = {
   name: "Shah Murad Ali",
   photo: "/panelists/shah-murad-ali.png",
-  bio: [],
   label: "moderator",
+  bio: [
+    "Shah Murad Ali is a passionate technology community builder, entrepreneur, and ecosystem advocate dedicated to fostering innovation and collaboration within the tech industry. He is the Co-Founder of NexeraLabs and a Cloudinary Community Creator, actively contributing to the developer ecosystem and promoting emerging technologies.",
+    "As a leader at Cloud Native Islamabad and Head Maverick of the BLACKBOX.AI IIUI Chapter, Shah has been actively involved in building technology communities, organizing developer-focused initiatives, and creating opportunities for students and professionals to connect, learn, and collaborate.",
+    "With a strong interest in cloud-native technologies, Artificial Intelligence, and community-driven innovation, he believes in empowering the next generation of technology professionals through hands-on experiences, knowledge sharing, and meaningful industry connections.",
+  ],
+  linkedin: "https://www.linkedin.com/in/shah-murad-ali-7169b334a/",
 };
 
 const panelists: Speaker[] = [
-  { name: "Arham Aamir", photo: "/panelists/arham-aamir.png", bio: [], label: "panelist" },
-  { name: "Jahanzeb Arshad", photo: "/panelists/jahanzeb-arshad.png", bio: [], label: "panelist" },
-  { name: "Uzma Bibi", photo: "/panelists/uzma-bibi.png", bio: [], label: "panelist" },
-  { name: "Faisal Rehman", photo: "/panelists/faisal-rehman.png", bio: [], label: "panelist" },
+  {
+    name: "Arham Aamir",
+    photo: "/panelists/arham-aamir.png",
+    label: "panelist",
+    bio: [
+      "Technology entrepreneur and operations leader, serving as COO & Co-Founder of Empeer Devlab, an Islamabad-based software development and emerging-tech research hub. For four years he has been building AI-enabled SaaS and ERP systems, leading work across multi-agent systems, LLM integration, and multi-tenant SaaS architecture, with 40+ tech projects shipped. He also leads ConvertInAR, an AI-powered 3D and no-app WebAR platform.",
+      "He is also the Co-Founder of Empeer Den, a global tech community of 150+ builders focused on Web3, AI, and emerging technologies, which has hosted webinar series on blockchain, DeFi, smart contracts, and onchain development.",
+      "Core message to young builders: focus on problem-solving over tools.",
+    ],
+    linkedin: "https://www.linkedin.com/in/arhamaamir/",
+  },
+  {
+    name: "Jahanzeb Arshad",
+    photo: "/panelists/jahanzeb-arshad.png",
+    label: "panelist",
+    bio: [
+      "Jahanzeb is an experienced IT and telecom executive with over 25 years of leadership experience. He currently serves as the Executive Vice President of Operations at Nayatel in Pakistan. In this role, he manages engineering and operations for cybersecurity, cloud platforms, critical business applications, and IP core infrastructure.",
+      "Before this, he led service delivery for Saudi Arabia's eVisa platform at Dell Managed Services in KSA. He oversaw SOC/NOC operations and various infrastructures, including data centers and security tools. His earlier roles include Director of Engineering at Transworld and positions of increasing responsibility at Nayatel and Micronet Broadband. He has consistently delivered strategic planning, resource use, and innovative solutions throughout project lifecycles.",
+    ],
+    linkedin: "https://www.linkedin.com/in/jahanzeb-arshad",
+  },
+  {
+    name: "Uzma Bibi",
+    photo: "/panelists/uzma-bibi.png",
+    label: "panelist",
+    topic:
+      "DevOps & Platform Engineer | Google Innovator | AWS Certified Solutions Architect | Kubernetes & GitOps Specialist",
+    bio: [
+      "Uzma Bibi is a DevOps and Platform Engineer specializing in designing, building, and managing resilient, scalable, and secure cloud infrastructure. With expertise across AWS, Azure, and Google Cloud Platform (GCP), she focuses on transforming complex infrastructure into reliable, automated, and manageable systems.",
+      "Her technical expertise spans Kubernetes, Docker, Terraform, CloudFormation, Ansible, and GitOps, alongside building CI/CD pipelines using Jenkins, GitHub Actions, GitLab CI/CD, and ArgoCD. She also works with monitoring and observability tools such as Prometheus, Grafana, Datadog, and ELK Stack to improve infrastructure reliability and operational visibility.",
+      "As an AWS Certified Solutions Architect and Google Innovator, Uzma is passionate about infrastructure automation, cloud-native technologies, platform engineering, and building systems that are not only scalable but also maintainable and resilient under pressure.",
+    ],
+    linkedin: "https://www.linkedin.com/in/uzma-bibi/",
+  },
+  {
+    name: "Faisal Rehman",
+    photo: "/panelists/faisal-rehman.png",
+    label: "panelist",
+    bio: [
+      "DevOps Engineer with extensive experience in Linux system administration, cloud infrastructure (AWS), Kubernetes orchestration, and CI/CD automation. Experienced in designing scalable cloud-native architectures, implementing Infrastructure as Code (Terraform), managing containerized workloads (Docker, Kubernetes, ECS Fargate), and optimizing deployment pipelines using GitHub Actions.",
+      "Strong background in Linux production support, AWS cost optimization, high availability systems, monitoring and GitOps workflows.",
+      "Passionate about knowledge sharing and mentoring 100+ DevOps professionals through structured technical training on his YouTube Channel \"DevOps Molvi\".",
+    ],
+    linkedin: "https://www.linkedin.com/in/faisikhan/",
+  },
 ];
 
 const speakers: Speaker[] = [
