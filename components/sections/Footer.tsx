@@ -29,7 +29,6 @@ const navGroups = [
       { label: "Become a Sponsor", href: "/sponsors" },
       { label: "Community Partner", href: "/partners" },
       { label: "Apply as Speaker", href: EVENT_CONFIG.speakerApplyUrl, external: true },
-      { label: "Register Now", href: EVENT_CONFIG.registrationUrl, external: true },
     ],
   },
   {
@@ -73,14 +72,12 @@ export default function Footer() {
               shape the next decade of infrastructure together.
             </p>
             <div className="mt-8 flex flex-wrap justify-center gap-3">
-              <a
-                href={EVENT_CONFIG.registrationUrl}
-                target="_blank"
-                rel="noopener noreferrer"
-                className="btn-primary"
+              <span
+                className="btn-primary cursor-not-allowed opacity-80"
+                aria-disabled="true"
               >
-                Register Now
-              </a>
+                Registrations Closed
+              </span>
               <a href="/sponsors" className="btn-secondary">
                 Become a Sponsor
               </a>

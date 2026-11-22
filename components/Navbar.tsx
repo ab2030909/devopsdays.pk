@@ -6,7 +6,7 @@ import { usePathname } from "next/navigation";
 import { motion, AnimatePresence } from "framer-motion";
 import { Menu, X } from "lucide-react";
 import Logo from "./Logo";
-import { EVENT_CONFIG } from "@/config/event";
+
 
 interface NavLink {
   /** when on home page, scroll-to-anchor; otherwise link to home + hash */
@@ -108,14 +108,12 @@ export default function Navbar() {
             <Link href="/sponsors" className="btn-secondary text-xs">
               Become a Sponsor
             </Link>
-            <a
-              href={EVENT_CONFIG.registrationUrl}
-              target="_blank"
-              rel="noopener noreferrer"
-              className="btn-primary text-xs"
+            <span
+              className="btn-primary text-xs cursor-not-allowed opacity-80"
+              aria-disabled="true"
             >
-              Register Now
-            </a>
+              Registrations Closed
+            </span>
           </div>
 
           <button
@@ -158,14 +156,12 @@ export default function Navbar() {
                   <Link href="/sponsors" className="btn-secondary text-xs text-center flex items-center justify-center">
                     Sponsor
                   </Link>
-                  <a
-                    href={EVENT_CONFIG.registrationUrl}
-                    target="_blank"
-                    rel="noopener noreferrer"
-                    className="btn-primary text-xs text-center flex items-center justify-center"
+                  <span
+                    className="btn-primary text-xs text-center flex items-center justify-center cursor-not-allowed opacity-80"
+                    aria-disabled="true"
                   >
-                    Register Now
-                  </a>
+                    Registrations Closed
+                  </span>
                 </div>
               </div>
             </motion.div>

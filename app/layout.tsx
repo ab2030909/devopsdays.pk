@@ -1,7 +1,6 @@
 import type { Metadata, Viewport } from "next";
 import { Inter, JetBrains_Mono, Space_Grotesk } from "next/font/google";
 import "./globals.css";
-import RegistrationPopup from "@/components/RegistrationPopup";
 
 const inter = Inter({
   subsets: ["latin"],
@@ -83,7 +82,6 @@ export default function RootLayout({
         className={`${inter.variable} ${jetbrainsMono.variable} ${spaceGrotesk.variable} bg-background text-ink antialiased noise`}
       >
         {children}
-        <RegistrationPopup />
       </body>
     </html>
   );
