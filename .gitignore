@@ -29,3 +29,8 @@ Thumbs.db
 # misc
 *.tsbuildinfo
 next-env.d.ts.bak
+
+# local-only working files (not for the site)
+/email-campaign/
+/email.html
+/speakers/
