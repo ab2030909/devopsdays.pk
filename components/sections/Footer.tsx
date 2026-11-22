@@ -26,7 +26,6 @@ const navGroups = [
   {
     title: "Get Involved",
     links: [
-      { label: "Become a Sponsor", href: "/sponsors" },
       { label: "Community Partner", href: "/partners" },
       { label: "Apply as Speaker", href: EVENT_CONFIG.speakerApplyUrl, external: true },
     ],
@@ -34,7 +33,6 @@ const navGroups = [
   {
     title: "Resources",
     links: [
-      { label: "Sponsorship Deck", href: "/deck" },
       { label: "Code of Conduct", href: "#" },
       { label: "FAQ", href: "#faq" },
       { label: "Contact", href: "mailto:islamabad@devopsdays.org" },
@@ -78,9 +76,6 @@ export default function Footer() {
               >
                 Registrations Closed
               </span>
-              <a href="/sponsors" className="btn-secondary">
-                Become a Sponsor
-              </a>
             </div>
           </motion.div>
 

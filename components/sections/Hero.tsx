@@ -108,9 +108,6 @@ export default function Hero() {
               >
                 Registrations Closed
               </span>
-              <a href="/sponsors" className="btn-secondary">
-                Become a Sponsor
-              </a>
               <a href="/partners" className="btn-secondary">
                 Community Partner
               </a>

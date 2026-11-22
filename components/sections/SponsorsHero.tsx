@@ -1,7 +1,7 @@
 "use client";
 
 import { motion } from "framer-motion";
-import { ArrowRight, Download, Sparkles } from "lucide-react";
+import { Sparkles } from "lucide-react";
 import Particles from "../Particles";
 import GridBackground from "../GridBackground";
 
@@ -49,22 +49,6 @@ export default function SponsorsHero() {
             conference. Connect with 300+ engineers, AI builders, cloud
             architects, startups and technology leaders in Islamabad.
           </motion.p>
-
-          <motion.div
-            initial={{ opacity: 0, y: 14 }}
-            animate={{ opacity: 1, y: 0 }}
-            transition={{ duration: 0.7, delay: 0.25 }}
-            className="mt-9 flex flex-wrap items-center justify-center gap-3"
-          >
-            <a href="#sponsor-apply" className="btn-primary group">
-              Become a Sponsor
-              <ArrowRight className="h-4 w-4 transition-transform group-hover:translate-x-0.5" />
-            </a>
-            <a href="/deck" className="btn-secondary">
-              <Download className="h-4 w-4" />
-              View Sponsorship Deck
-            </a>
-          </motion.div>
 
           {/* quick stats strip */}
           <motion.div

@@ -22,7 +22,6 @@ const links: NavLink[] = [
   { hash: "#speakers", label: "Speakers" },
   { route: "/sponsors", label: "Sponsors" },
   { route: "/partners", label: "Partners" },
-  { route: "/deck", label: "Deck" },
   { hash: "#venue", label: "Venue" },
 ];
 
@@ -105,9 +104,6 @@ export default function Navbar() {
           </nav>
 
           <div className="hidden md:flex items-center gap-3">
-            <Link href="/sponsors" className="btn-secondary text-xs">
-              Become a Sponsor
-            </Link>
             <span
               className="btn-primary text-xs cursor-not-allowed opacity-80"
               aria-disabled="true"
@@ -152,12 +148,9 @@ export default function Navbar() {
                     </Tag>
                   );
                 })}
-                <div className="mt-2 grid grid-cols-2 gap-2">
-                  <Link href="/sponsors" className="btn-secondary text-xs text-center flex items-center justify-center">
-                    Sponsor
-                  </Link>
+                <div className="mt-2">
                   <span
-                    className="btn-primary text-xs text-center flex items-center justify-center cursor-not-allowed opacity-80"
+                    className="btn-primary w-full text-xs text-center flex items-center justify-center cursor-not-allowed opacity-80"
                     aria-disabled="true"
                   >
                     Registrations Closed
