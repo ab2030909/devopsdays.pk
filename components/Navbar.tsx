@@ -45,12 +45,23 @@ export default function Navbar() {
     return () => window.removeEventListener("scroll", onScroll);
   }, []);
 
-  // hide the navbar while the page is in fullscreen mode
+  // hide the navbar while the page is in fullscreen mode (Fullscreen API or F11)
   useEffect(() => {
-    const onFs = () => setIsFullscreen(!!document.fullscreenElement);
-    onFs();
-    document.addEventListener("fullscreenchange", onFs);
-    return () => document.removeEventListener("fullscreenchange", onFs);
+    const check = () => {
+      const apiFs = !!document.fullscreenElement;
+      // F11 fullscreen doesn't always set fullscreenElement; detect by viewport
+      const f11 =
+        Math.abs(window.innerHeight - screen.height) <= 2 &&
+        Math.abs(window.innerWidth - screen.width) <= 2;
+      setIsFullscreen(apiFs || f11);
+    };
+    check();
+    document.addEventListener("fullscreenchange", check);
+    window.addEventListener("resize", check);
+    return () => {
+      document.removeEventListener("fullscreenchange", check);
+      window.removeEventListener("resize", check);
+    };
   }, []);
 
   // close mobile drawer on route change
