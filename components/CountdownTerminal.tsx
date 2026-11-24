@@ -3,7 +3,7 @@
 import { useEffect, useState } from "react";
 import { motion } from "framer-motion";
 
-const TARGET = new Date("2026-11-25T09:00:00+05:00").getTime();
+const TARGET = new Date("2026-11-25T10:00:00+05:00").getTime();
 
 interface Parts {
   days: number;
@@ -144,7 +144,7 @@ export default function CountdownTerminal() {
             ) : (
               <>
                 <span className="text-neon-glow">25.nov.2026</span>
-                <span className="text-ink/40"> · islamabad · 09:00 PKT</span>
+                <span className="text-ink/40"> · islamabad · 10:00 PKT</span>
               </>
             )}
           </span>
