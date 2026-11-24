@@ -34,6 +34,7 @@ function hrefFor(link: NavLink, onHome: boolean): string {
 export default function Navbar() {
   const [scrolled, setScrolled] = useState(false);
   const [open, setOpen] = useState(false);
+  const [isFullscreen, setIsFullscreen] = useState(false);
   const pathname = usePathname();
   const onHome = pathname === "/";
 
@@ -42,6 +43,14 @@ export default function Navbar() {
     onScroll();
     window.addEventListener("scroll", onScroll, { passive: true });
     return () => window.removeEventListener("scroll", onScroll);
+  }, []);
+
+  // hide the navbar while the page is in fullscreen mode
+  useEffect(() => {
+    const onFs = () => setIsFullscreen(!!document.fullscreenElement);
+    onFs();
+    document.addEventListener("fullscreenchange", onFs);
+    return () => document.removeEventListener("fullscreenchange", onFs);
   }, []);
 
   // close mobile drawer on route change
@@ -57,7 +66,7 @@ export default function Navbar() {
       transition={{ duration: 0.6, ease: [0.22, 1, 0.36, 1] }}
       className={`fixed top-0 left-0 right-0 z-50 transition-all duration-500 ${
         scrolled ? "py-2" : "py-4"
-      }`}
+      } ${isFullscreen ? "hidden" : ""}`}
     >
       <div className="container-px">
         <div

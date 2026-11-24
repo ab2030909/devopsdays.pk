@@ -96,23 +96,6 @@ export default function Hero() {
               </span>
             </motion.div>
 
-            <motion.div
-              initial={{ opacity: 0, y: 12 }}
-              animate={{ opacity: 1, y: 0 }}
-              transition={{ duration: 0.7, delay: 0.5 }}
-              className="mt-6 lg:mt-6 flex flex-wrap items-center gap-2 sm:gap-3"
-            >
-              <span
-                className="btn-primary cursor-not-allowed opacity-80"
-                aria-disabled="true"
-              >
-                Registrations Closed
-              </span>
-              <a href="/partners" className="btn-secondary">
-                Community Partner
-              </a>
-            </motion.div>
-
             {/* live countdown to Nov 25, 2026 */}
             <CountdownTerminal />
           </div>
